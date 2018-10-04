@@ -1,0 +1,101 @@
+/* Font */
+
+@font-face {
+    font-family: 'andadabold';
+    src: url('../fonts/webfontkit-andada-bold/andada-bold-webfont.woff2') format('woff2'),
+         url('../fonts/webfontkit-andada-bold/andada-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'xiomararegular';
+    src: url('../fonts/webfontkit-xiomara/xiomara-script-webfont.woff2') format('woff2'),
+         url('../fonts/webfontkit-xiomara/xiomara-script-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans:400,400i,700,700i');
+
+body{
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 18px;
+    color: $charcoal-grey;
+}
+.white-body-text{
+    color: $white-text;
+}
+.small-body-text { 
+    font-size: 16px;
+}
+h1{
+    font-family: 'andadabold';
+    font-size: 72px;
+    color: $home-title-text;   
+}
+h2{
+    font-family: 'andadabold';
+    font-size: 64px;
+    color: $violet-text;
+}
+h2.white{
+    color: $white-text;
+}
+h3{
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 48px;
+    color: $charcoal-grey;
+}
+h4{
+    font-family: 'andadabold';
+    font-size: 36px;
+    color: $charcoal-grey;
+}
+h4.white{
+    color: $white-text;
+}
+h4.curvy{
+    font-family: 'xiomararegular';
+    font-size: 36px;
+    line-height: 45px;
+    color: $curvy-text;
+}
+.bold-button-black-text {
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    color: $charcoal-grey;
+}
+.bold-button-white-text {
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    color: $white-text;
+}
+.registry-text-Black {
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    color: $charcoal-grey;
+}
+
+/*Font*/
+
+/* Mixin */
+
+@mixin border-radius($radius) {
+	border-radius: $radius;
+	-webkit-border-radius: $radius;
+	-moz-border-radius: $radius;
+}
+
+/* Mixin */
+
+a{
+    transition: all 0.5s ease;
+}
+.button {
+    transition: all 0.5s ease;
+}

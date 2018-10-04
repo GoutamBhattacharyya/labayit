@@ -1,0 +1,167 @@
+.static-nav-header{
+    padding: 20px 0 16px 0;
+    border-bottom: 1px solid #cacaca;
+    background: $white-text;
+    .nav-container{
+        max-width: 97%;
+        margin: 0 auto;
+        @media (min-width: 1280px) {
+            max-width: 1250px;           
+        }
+        .nav-left{
+            width: 100%;
+            @media (min-width: 768px) {
+                width: 57%;          
+            }
+            .navbar {
+                padding: 0px;
+            }
+        }
+        .nav-right {
+            width: 100%;
+            @media (min-width: 768px) {
+                width: 43%;          
+            }
+        }
+    }
+    .logo{
+        max-width: 118px;
+        width: 100%;
+    }
+    .mob-menu-bg{
+        background: $charcoal-grey;
+        position: fixed;
+        left: 0px;
+        top: -100%;
+        height: 100%;
+        width: 100%;
+        @media (min-width: 992px) {
+            background: transparent;
+            position: relative;
+            left: auto;
+            top: auto !important;
+            height: auto;
+            width: auto;
+        }
+    }
+    .main-menu{
+        list-style: none;
+        padding: 0px;
+        margin: 0px;
+        margin-top: 70px;
+        @media (min-width: 992px) {
+           margin-top: 0px; 
+        }
+        li{
+            list-style: none;
+            display: block;
+            padding: 5px 0px;
+            width: 100%;
+            text-align: center;           
+            @media (min-width: 992px) {
+                display: inline-block;  
+                padding: 0px 6px 0px 6px;
+                width: auto;
+                text-align: left;        
+            }
+            @media (min-width: 1024px) {
+                padding: 0px 8px 0px 8px;           
+            }
+            @media (min-width: 1280px) {
+                padding: 0px 18px 0px 18px;           
+            }
+            &:first-child {
+                padding-left: 0px;
+            }
+            &:nth-child(2) {
+                padding-left: 0px;
+            }
+            &:last-child {
+                padding-right: 0px;
+            }
+            a{
+                font-family: 'Noto Sans', sans-serif;
+                font-size: 15px;
+                @media (min-width: 992px) {
+                    color: $curvy-text;
+                }
+                @media (min-width: 1280px) {
+                    font-size: 18px;           
+                }
+                color: $white-text;
+                font-weight: bold;
+                text-transform: uppercase;
+                &:hover{
+                    text-decoration: none;
+                    color: $theme-green-button;
+                }              
+            }
+        }
+    }
+    .lb-custom-select {
+        width: 100px;
+        select {
+            background-position: 85.5% center;
+        }
+    }
+    .lb-cross-btn {
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        width: 25px;
+        height: 25px;
+        display: block;
+    }
+    .theme-green-button {
+        padding: 6px 33px;
+        @media (min-width: 768px) {
+            padding: 11px 47px;
+        }
+    }
+    .lb-custom-select {
+        select {
+            height: 38px;
+            @media (min-width: 768px) {
+                height: 48px;
+            } 
+        }
+    }
+}
+
+.lb-custom-select {
+    select{
+        width: 100%;
+        height: 48px;
+        background: white;
+        border: 1px solid $charcoal-grey;   
+        padding: 0px 10px;     
+        font-size: 18px;
+        color: $charcoal-grey;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        background-image: url(../images/custom-select-dp-arrow.png);
+        background-repeat: no-repeat;
+        background-position: 96.5% center;
+        @include border-radius(2px)
+    }
+}
+.theme-green-button {
+    @include border-radius(26px);
+    background: $theme-green-button;
+    padding: 11px 47px;
+    text-align: center;
+    &:hover{
+        background: $theme-green-button-hover;
+    }
+}
+.theme-green-button-big {
+    @include border-radius(26px);
+    background: $theme-green-button;
+    padding: 11px 125px;
+    text-align: center;
+    border: 2px solid #343434;
+    &:hover{
+        background: $theme-green-button-hover;
+    }
+}

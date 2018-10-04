@@ -1,0 +1,116 @@
+.lb-home-banner {
+    position: relative;
+    // max-height: 870px;
+    height: 870px;
+    overflow: hidden;
+    margin-top: 89px;
+    .lb-banner-bottom{
+        height: 220px;
+        background-color: $dark-mauve;
+        background-image: url(../images/box-pattern.png);
+        background-repeat: repeat;
+        position: absolute;
+        width: 105%;
+        left: -5px;
+        bottom: -15px;
+        z-index: 1;
+        -moz-transform: rotate(-1deg);
+        -webkit-transform: rotate(-1deg);
+        -o-transform: rotate(-1deg);
+        -ms-transform: rotate(-1deg);
+        transform: rotate(-1deg);
+        &:before {
+            content: "";
+            position: absolute;
+            top: -5px;
+            left: 0px;
+            width: 100%;
+            height: 1px;
+            background: #1d1d1b;
+        }
+    }
+    .lb-gr-blub {
+        position: absolute;
+        top: -90px;
+        @media (min-width: 768px) {
+            top: -117px;
+        }
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .lb-gr-fridge {
+        position: absolute;
+        transition: all 0.9s ease;
+        left: calc(100% - 110%);
+        bottom: 100px;
+        z-index: 2;
+        @media (min-width: 1200px) {
+            left: 0px;            
+        }
+    }
+    .lb-gr-table{
+        position: absolute;
+        right: calc(100% - 108%);
+        bottom: 87px;
+        z-index: 2;
+        transition: all 0.9s ease;
+        @media (min-width: 1200px) {
+            right: 10px;
+            left: auto;            
+        }
+    }
+    .lb-left-half-circle {
+        position: absolute;
+        transition: all 0.9s ease;
+        left: calc(100% - 110%);
+        top: 30px;
+        z-index: 0;
+        @media (min-width: 1200px) {
+            left: 0px;
+            right: auto;            
+        }
+    }
+    .lb-right-half-circle {
+        position: absolute;
+        transition: all 0.9s ease;
+        right: calc(100% - 108%);
+        top: -95px;
+        z-index: 0;
+        @media (min-width: 1200px) {
+            right: 0px;
+            left: auto;            
+        }
+    }
+    .lb-photo-frame{
+        position: absolute;
+        top: 40px;
+        transition: all 0.9s ease;
+        right: calc(100% - 96%);
+        z-index: 3;
+        @media (min-width: 1200px) {
+            right: 130px;
+            left: auto;              
+        }
+    }
+    .lb-banner-text{
+        position: absolute;
+        top: 43%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        text-align: center;
+        width: 80%;
+    }
+    .theme-green-button-big {
+        padding: 11px 50px;
+        @media (min-width: 576px) {
+            padding: 11px 125px;
+        }
+    }
+    
+    h4.curvy {
+        font-size: 30px;
+        @media (min-width: 576px) {
+            font-size: 36px;
+        }
+    }
+}

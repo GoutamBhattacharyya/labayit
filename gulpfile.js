@@ -19,7 +19,7 @@ gulp.task('serve',['sass'],function(){
     browsersync.init({
         server: './src'
     });
-    gulp.watch(['node_modules/bootstrap/scss/bootstrap.scss','src/scss/*.scss','src/scss/partials/*.scss'],['sass']);
+    gulp.watch(['node_modules/bootstrap/scss/bootstrap.scss','src/scss/*.scss','src/scss/partials/*.scss','src/scss/pages/*.scss'],['sass']);
     gulp.watch('src/*.html').on('change',browsersync.reload);
 });
 
