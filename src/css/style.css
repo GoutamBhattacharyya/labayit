@@ -41,13 +41,16 @@ h3 {
   font-size: 48px;
   color: #404352; }
 
+h3.style-ext {
+  font-family: 'andadabold'; }
+
 h4 {
   font-family: 'andadabold';
   font-size: 36px;
   color: #404352; }
 
 h4.white {
-  color: #fff; }
+  color: #fff !important; }
 
 h4.curvy {
   font-family: 'xiomararegular';
@@ -82,6 +85,14 @@ a {
 .button {
   transition: all 0.5s ease; }
 
+.full-link {
+  position: absolute;
+  width: 90%;
+  height: 90%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%); }
+
 .static-nav-header {
   padding: 20px 0 16px 0;
   border-bottom: 1px solid #cacaca;
@@ -96,12 +107,18 @@ a {
       width: 100%; }
       @media (min-width: 768px) {
         .static-nav-header .nav-container .nav-left {
+          width: 40%; } }
+      @media (min-width: 992px) {
+        .static-nav-header .nav-container .nav-left {
           width: 57%; } }
       .static-nav-header .nav-container .nav-left .navbar {
         padding: 0px; }
     .static-nav-header .nav-container .nav-right {
       width: 100%; }
       @media (min-width: 768px) {
+        .static-nav-header .nav-container .nav-right {
+          width: 60%; } }
+      @media (min-width: 992px) {
         .static-nav-header .nav-container .nav-right {
           width: 43%; } }
   .static-nav-header .logo {
@@ -219,7 +236,7 @@ a {
   .theme-green-button:hover {
     background: rgba(97, 197, 192, 0.699); }
 
-.theme-green-button-big {
+.btn-create-registry {
   border-radius: 26px;
   -webkit-border-radius: 26px;
   -moz-border-radius: 26px;
@@ -227,14 +244,154 @@ a {
   padding: 11px 125px;
   text-align: center;
   border: 2px solid #343434; }
-  .theme-green-button-big:hover {
+  .btn-create-registry:hover {
+    background: rgba(97, 197, 192, 0.699);
+    border: 2px solid #fff; }
+
+.btn-create-registry-nb {
+  border-radius: 26px;
+  -webkit-border-radius: 26px;
+  -moz-border-radius: 26px;
+  background: #64c1bd;
+  padding: 10px 78px;
+  text-align: center; }
+  .btn-create-registry-nb:hover {
     background: rgba(97, 197, 192, 0.699); }
+
+.lb-find-couple {
+  background: #404352;
+  padding: 80px 15px; }
+  .lb-find-couple h4 {
+    margin: 0px; }
+  .lb-find-couple .lb-couple-search {
+    width: 100%;
+    max-width: 500px; }
+    @media (min-width: 992px) {
+      .lb-find-couple .lb-couple-search {
+        width: 50%;
+        max-width: none; } }
+
+.lb-custom-input {
+  height: 48px;
+  border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border: none;
+  outline: none;
+  padding: 0px 12px;
+  line-height: 48px;
+  width: 100%; }
+  .lb-custom-input::-webkit-input-placeholder {
+    /* WebKit browsers */
+    color: #bcbcbc; }
+  .lb-custom-input:-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    color: #bcbcbc; }
+  .lb-custom-input::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    color: #bcbcbc; }
+  .lb-custom-input:-ms-input-placeholder {
+    /* Internet Explorer 10+ */
+    color: #bcbcbc; }
+
+.lb-free-delivery {
+  padding: 80px 15px;
+  background: #404352;
+  position: relative; }
+  .lb-free-delivery:before {
+    content: "";
+    position: absolute;
+    top: -105px;
+    left: -350px;
+    z-index: 5;
+    width: 754px;
+    height: 569px;
+    background: url(../images/gr-gifts.png) top left no-repeat;
+    display: none; }
+    @media (min-width: 992px) {
+      .lb-free-delivery:before {
+        left: -400px;
+        display: block; } }
+    @media (min-width: 1200px) {
+      .lb-free-delivery:before {
+        left: -280px; } }
+    @media (min-width: 1350px) {
+      .lb-free-delivery:before {
+        left: -180px; } }
+    @media (min-width: 1900px) {
+      .lb-free-delivery:before {
+        left: 20%;
+        transform: translateX(-50%); } }
+    @media (min-width: 2500px) {
+      .lb-free-delivery:before {
+        left: 26%;
+        transform: translateX(-50%); } }
+    @media (min-width: 3500px) {
+      .lb-free-delivery:before {
+        left: 40%;
+        transform: translateX(-50%); } }
+
+.lb-brands-section {
+  padding: 80px 15px; }
+  .lb-brands-section .container {
+    max-width: 1260px; }
+  @media (max-width: 767px) and (orientation: portrait) {
+    .lb-brands-section .lb-brand-images img {
+      max-width: 100%; } }
+
+.lb-questions-section {
+  padding: 80px 15px;
+  background-color: #934d6b; }
+
+.link-read-more {
+  display: block; }
+  .link-read-more:hover {
+    color: #64c1bd;
+    text-decoration: none; }
+
+.lb-style-text {
+  padding: 0px 15px; }
+  @media (min-width: 992px) {
+    .lb-style-text {
+      width: 380px; } }
+
+footer {
+  background: #404352;
+  padding: 80px 15px; }
+  footer .container {
+    max-width: 1275px; }
+  footer .lb-social-links a {
+    display: block;
+    margin: 0 8px;
+    font-size: 15px;
+    color: #fff; }
+    footer .lb-social-links a:hover {
+      text-decoration: none; }
+    footer .lb-social-links a:first-child {
+      margin-left: 0px; }
+  footer .lb-footer-links ul {
+    padding: 0px;
+    margin: 0px; }
+    footer .lb-footer-links ul li {
+      list-style: none;
+      padding: 2px 0 0 0;
+      margin: 0px; }
+      footer .lb-footer-links ul li a {
+        font-size: 14px;
+        font-weight: normal;
+        color: #fff; }
+        footer .lb-footer-links ul li a:hover {
+          text-decoration: none;
+          color: #64c1bd; }
 
 .lb-home-banner {
   position: relative;
-  height: 870px;
+  height: 600px;
   overflow: hidden;
   margin-top: 89px; }
+  @media (min-width: 992px) {
+    .lb-home-banner {
+      height: 870px; } }
   .lb-home-banner .lb-banner-bottom {
     height: 220px;
     background-color: #934d6b;
@@ -317,18 +474,43 @@ a {
         left: auto; } }
   .lb-home-banner .lb-banner-text {
     position: absolute;
-    top: 43%;
+    top: 62%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
     width: 80%; }
-  .lb-home-banner .theme-green-button-big {
+    @media (min-width: 992px) {
+      .lb-home-banner .lb-banner-text {
+        top: 43%;
+        left: 50%;
+        transform: translate(-50%, -50%); } }
+  .lb-home-banner .btn-create-registry {
     padding: 11px 50px; }
     @media (min-width: 576px) {
-      .lb-home-banner .theme-green-button-big {
+      .lb-home-banner .btn-create-registry {
         padding: 11px 125px; } }
   .lb-home-banner h4.curvy {
     font-size: 30px; }
     @media (min-width: 576px) {
       .lb-home-banner h4.curvy {
         font-size: 36px; } }
+
+.lb-gifts-section .lb-gift-circle {
+  border-radius: 200px;
+  -webkit-border-radius: 200px;
+  -moz-border-radius: 200px;
+  width: 200px;
+  height: 200px;
+  background: #64c1bd; }
+
+.lb-gifts-section .lb-gift-title {
+  margin-top: 90px;
+  margin-bottom: 45px; }
+
+.lb-gifts-section .lb-gr-bottom-border {
+  padding-bottom: 80px;
+  border-bottom: 1px solid #979797; }
+
+.lb-gifts-easy-section .lb-gift-title {
+  margin-top: 85px;
+  margin-bottom: 45px; }

@@ -1,7 +1,10 @@
 .lb-home-banner {
     position: relative;
     // max-height: 870px;
-    height: 870px;
+    height: 600px;
+    @media (min-width: 992px) {
+        height: 870px;
+    }
     overflow: hidden;
     margin-top: 89px;
     .lb-banner-bottom{
@@ -94,13 +97,18 @@
     }
     .lb-banner-text{
         position: absolute;
-        top: 43%;
+        top: 62%;
         left: 50%;
         transform: translate(-50%,-50%);
         text-align: center;
         width: 80%;
+        @media (min-width: 992px) {
+            top: 43%;
+            left: 50%;
+            transform: translate(-50%,-50%);              
+        }
     }
-    .theme-green-button-big {
+    .btn-create-registry {
         padding: 11px 50px;
         @media (min-width: 576px) {
             padding: 11px 125px;
@@ -112,5 +120,27 @@
         @media (min-width: 576px) {
             font-size: 36px;
         }
+    }
+}
+.lb-gifts-section {    
+    .lb-gift-circle{
+        @include border-radius(200px);
+        width: 200px;
+        height: 200px;
+        background: $theme-green-button;
+    }
+    .lb-gift-title{
+        margin-top: 90px;
+        margin-bottom: 45px;
+    }
+    .lb-gr-bottom-border {
+        padding-bottom: 80px;
+        border-bottom: 1px solid $hr-border;
+    }
+}
+.lb-gifts-easy-section {    
+    .lb-gift-title{
+        margin-top: 85px;
+        margin-bottom: 45px;
     }
 }

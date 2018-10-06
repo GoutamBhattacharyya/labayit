@@ -11,6 +11,9 @@
         .nav-left{
             width: 100%;
             @media (min-width: 768px) {
+                width: 40%;          
+            }
+            @media (min-width: 992px) {
                 width: 57%;          
             }
             .navbar {
@@ -20,6 +23,9 @@
         .nav-right {
             width: 100%;
             @media (min-width: 768px) {
+                width: 60%;          
+            }
+            @media (min-width: 992px) {
                 width: 43%;          
             }
         }
@@ -146,6 +152,7 @@
         @include border-radius(2px)
     }
 }
+
 .theme-green-button {
     @include border-radius(26px);
     background: $theme-green-button;
@@ -155,7 +162,8 @@
         background: $theme-green-button-hover;
     }
 }
-.theme-green-button-big {
+
+.btn-create-registry {
     @include border-radius(26px);
     background: $theme-green-button;
     padding: 11px 125px;
@@ -163,5 +171,155 @@
     border: 2px solid #343434;
     &:hover{
         background: $theme-green-button-hover;
+        border: 2px solid $white-text;        
+    }
+}
+.btn-create-registry-nb {
+    @include border-radius(26px);
+    background: $theme-green-button;
+    padding: 10px 78px;
+    text-align: center;
+    &:hover{
+        background: $theme-green-button-hover;
+    }
+}
+.lb-find-couple {
+    background: $charcoal-grey;
+    padding: 80px 15px;
+    h4{
+        margin: 0px;
+    }
+    .lb-couple-search {
+        width: 100%;
+        max-width: 500px;
+        @media (min-width: 992px)  {
+            width: 50%;
+            max-width: none;
+        }
+    }
+}
+
+.lb-custom-input {
+    height: 48px;
+    @include border-radius(2px);
+    @include placeholder-color($placeholder-color);
+    border: none;
+    outline: none;
+    padding: 0px 12px;
+    line-height: 48px;
+    width: 100%;
+}
+
+.lb-free-delivery {
+    padding: 80px 15px;
+    background: $charcoal-grey;
+    position: relative;
+    &:before{
+        content: "";
+        position: absolute;
+        top: -105px;
+        left: -350px;
+        z-index: 5;
+        width: 754px;
+        height: 569px;
+        background: url(../images/gr-gifts.png) top left no-repeat;
+        display: none;
+        @media (min-width: 992px) {
+            left: -400px;
+            display: block;
+        }
+        @media (min-width: 1200px) {
+            left: -280px;
+        }
+        @media (min-width: 1350px) {
+            left: -180px;
+        }
+        @media (min-width: 1900px) {
+            left: 20%;
+            transform: translateX(-50%);
+        }
+        @media (min-width: 2500px) {
+            left: 26%;
+            transform: translateX(-50%);
+        }
+        @media (min-width: 3500px) {
+            left: 40%;
+            transform: translateX(-50%);
+        }
+    }
+}
+
+.lb-brands-section {
+    padding: 80px 15px;
+    .container {
+        max-width: 1260px;
+    }
+    .lb-brand-images{
+        img{
+            @media (max-width: 767px) and (orientation: portrait) {
+               max-width: 100%;
+            }
+        }
+    }
+}
+
+.lb-questions-section {
+    padding: 80px 15px;
+    background-color: $dark-mauve;
+}
+
+.link-read-more {
+    display: block;
+    &:hover {
+        color:$theme-green-button;
+        text-decoration: none;
+    }    
+}
+.lb-style-text{
+    padding: 0px 15px;
+    @media (min-width: 992px) {
+        width: 380px;
+    }
+}
+
+footer{
+    background: $charcoal-grey;
+    padding: 80px 15px;
+    .container {
+        max-width: 1275px;
+    }
+    .lb-social-links {
+        a{
+            display: block;
+            margin: 0 8px;
+            font-size: 15px;
+            color: #fff;
+            &:hover{
+                text-decoration: none;
+            }
+            &:first-child {
+                margin-left: 0px;
+            }
+        }
+    }
+    .lb-footer-links {
+        ul{
+            padding: 0px;
+            margin: 0px;
+            li{
+                list-style: none;
+                padding: 2px 0 0 0;
+                margin: 0px;
+                a{
+                    font-size: 14px;
+                    font-weight: normal;
+                    color: #fff;
+                    &:hover {
+                        text-decoration: none;
+                        color: $theme-green-button;
+                    }
+                }
+            }
+        }
     }
 }

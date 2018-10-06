@@ -9,15 +9,19 @@
 
   <!-- Bootstrap CSS -->
   <link href="css/bootstrap.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
   <link href="css/style.css" rel="stylesheet">
 
 </head>
 
 <body>
+
+
   <!-- Header -->
   <header class="static-nav-header fixed-top">
     <div class="nav-container">
-      <div class="d-flex flex-column flex-md-row">
+      <div class="d-flex flex-column flex-md-row justify-content-between">
         <div class="nav-left d-flex align-items-center justify-content-between justify-content-md-start">
           <div class="logo mr-5">
             <a href="#">
@@ -25,34 +29,34 @@
             </a>
           </div>
           <div class="navbar navbar-expand-lg navbar-light bg-light">
-              <button class="navbar-toggler" type="button">
-                  <span class="navbar-toggler-icon"></span>
-              </button>
+            <button class="navbar-toggler" type="button">
+              <span class="navbar-toggler-icon"></span>
+            </button>
           </div>
-          <div class="mob-menu-bg">            
+          <div class="mob-menu-bg">
             <a href="#" class="lb-cross-btn d-lg-none">
               <img src="images/white-cross.png" alt="">
             </a>
-              <ul class="main-menu">
-                <li class="d-lg-none">
-                  <a href="#">Home</a>
-                </li>
-                <li>
-                  <a href="#">ABOUT</a>
-                </li>
-                <li>
-                  <a href="#">REGISTRY</a>
-                </li>
-                <li>
-                  <a href="#">STORE</a>
-                </li>
-                <li>
-                  <a href="#">INSPIRATION</a>
-                </li>
-                <li>
-                  <a href="#">HELP</a>
-                </li>
-              </ul>
+            <ul class="main-menu">
+              <li class="d-lg-none">
+                <a href="#">Home</a>
+              </li>
+              <li>
+                <a href="#">ABOUT</a>
+              </li>
+              <li>
+                <a href="#">REGISTRY</a>
+              </li>
+              <li>
+                <a href="#">STORE</a>
+              </li>
+              <li>
+                <a href="#">INSPIRATION</a>
+              </li>
+              <li>
+                <a href="#">HELP</a>
+              </li>
+            </ul>
           </div>
         </div>
         <div class="nav-right d-flex justify-content-between justify-content-md-end align-items-center mt-3 mt-md-0">
@@ -93,27 +97,326 @@
     <div class="lb-banner-text">
       <h1>La’Bayit</h1>
       <h4 class="curvy pt-3">Building Magical Moments</h4>
-      <button type="button" class="btn theme-green-button-big bold-button-white-text mt-5">CREATE REGISTRY</button>
+      <button type="button" class="btn btn-create-registry bold-button-white-text mt-5">CREATE REGISTRY</button>
     </div>
   </section>
   <!-- Home Banner End -->
+  <!-- Find a couple -->
+  <section class="lb-find-couple">
+    <div class="container">
+      <div class="d-flex justify-content-center align-items-center flex-column flex-lg-row">
+        <div>
+          <h4 class="white">FIND A COUPLE</h4>
+        </div>
+        <div class="lb-couple-search pt-4 pb-4 pt-lg-0 pb-lg-0 pl-lg-4 pr-lg-4">
+          <input type="text" name="" class="lb-custom-input" placeholder="Search by First or Last Name">
+        </div>
+        <button type="button" class="btn theme-green-button bold-button-white-text">SEARCH</button>
+      </div>
+    </div>
+  </section>
+  <!-- Find a couple end -->
+  <!-- Gift section -->
+  <section class="lb-gifts-section">
+    <div class="container  lb-gr-bottom-border">
+      <div class="row">
+        <div class="col-12 text-center lb-gift-title">
+          <h4>THE GIFTS YOU ACTUALLY WANT</h4>
+          <h4 class="curvy">Everything you need for your new home</h4>
+        </div>
+        <div class="owl-carousel owl-theme">
+          <div>
+            <div class="lb-gift-circle d-flex align-items-center justify-content-center m-auto">
+              <a href="#" class="full-link"></a>
+              <img src="images/judaica.png" alt="" title="">
+            </div>
+            <div class="bold-button-black-text text-center pt-3">JUDAICA</div>
+          </div>
+          <div>
+            <div class="lb-gift-circle d-flex align-items-center justify-content-center m-auto">
+              <a href="#" class="full-link"></a>
+              <img src="images/travel.png" alt="" title="">
+            </div>
+            <div class="bold-button-black-text text-center pt-3">TRAVEL</div>
+          </div>
+          <div>
+            <div class="lb-gift-circle d-flex align-items-center justify-content-center m-auto">
+              <a href="#" class="full-link"></a>
+              <img src="images/kitchen.png" alt="" title="">
+            </div>
+            <div class="bold-button-black-text text-center pt-3">KITCHEN</div>
+          </div>
+          <div>
+            <div class="lb-gift-circle d-flex align-items-center justify-content-center m-auto">
+              <a href="#" class="full-link"></a>
+              <img src="images/experiences.png" alt="" title="">
+            </div>
+            <div class="bold-button-black-text text-center pt-3">EXPERIENCES</div>
+          </div>
+          <div>
+            <div class="lb-gift-circle d-flex align-items-center justify-content-center m-auto">
+              <a href="#" class="full-link"></a>
+              <span class="bold-button-white-text">EXPLORE GIFTS</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Gift section end -->
+  <!-- Gift made easy section -->
+  <section class="lb-gifts-easy-section">
+    <div class="container mb-5 pb-4">
+      <div class="row">
+        <div class="col-12 text-center lb-gift-title">
+          <h4>GIFTS MADE EASY</h4>
+          <h4 class="curvy">All the tools you need to get the gifts you love</h4>
+        </div>
+        <div class="owl-carousel owl-theme">
+          <div>
+            <a href="#" class="full-link"></a>
+            <div class="d-flex align-items-center justify-content-center m-auto">
+              <img src="images/group-giftind.jpg" class="w-auto" alt="" title="">
+            </div>
+            <div class="bold-button-black-text text-center pt-4 pl-5 pr-5">GROUP GIFTING</div>
+            <p class="text-center pt-2 pl-2 pr-2">Let guests contribute what they wish so that you can register for all
+              the gifts you want.</p>
+          </div>
+          <div>
+            <a href="#" class="full-link"></a>
+            <div class="d-flex align-items-center justify-content-center m-auto">
+              <img src="images/share-with-guests.jpg" class="w-auto" alt="" title="">
+            </div>
+            <div class="bold-button-black-text text-center pt-4 pl-5 pr-5">SHARE WITH GUESTS</div>
+            <p class="text-center pt-2 pl-3 pr-3">Easily share your registry with friends and family with a custom URL.
+            </p>
+          </div>
+          <div>
+            <a href="#" class="full-link"></a>
+            <div class="d-flex align-items-center justify-content-center m-auto">
+              <img src="images/deliveri-coordination.jpg" class="w-auto" alt="" title="">
+            </div>
+            <div class="bold-button-black-text text-center pt-4 pl-5 pr-5">DELIVERY COORDINATION</div>
+            <p class="text-center pt-2 pl-2 pr-2">Delivery right to your door so that you do not have to make multiple
+              trips to the post office. </p>
+          </div>
+          <div>
+            <a href="#" class="full-link"></a>
+            <div class="d-flex align-items-center justify-content-center m-auto">
+              <img src="images/free-shipping.jpg" class="w-auto" alt="" title="">
+            </div>
+            <div class="bold-button-black-text text-center pt-4 pl-5 pr-5">FREE SHIPPING</div>
+            <p class="text-center pt-2 pl-2 pr-2">Your guests will love buying you gifts with free shipping for almost
+              all La’Bayit gifts.</p>
+          </div>
+          <div>
+            <a href="#" class="full-link"></a>
+            <div class="d-flex align-items-center justify-content-center m-auto">
+              <img src="images/unlock-perks.jpg" class="w-auto" alt="" title="">
+            </div>
+            <div class="bold-button-black-text text-center pt-4 pl-5 pr-5">UNLOCK PERKS</div>
+            <p class="text-center pt-2 pl-2 pr-2">Win free items as you achieve certain gifting and registry milestones
+              before your wedding. </p>
+          </div>
+        </div>
+        <div class="d-flex justify-content-center w-100 mt-5">
+          <button type="button" class="btn btn-create-registry-nb bold-button-white-text mt-1">CREATE REGISTRY</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Gift made easy section end -->
+  <!-- Free delivery section -->
+  <section class="lb-free-delivery">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-9 offset-lg-3 text-center">
+          <h4 class="white">FREE DELIVERY STRAIGHT TO YOUR DOOR!</h4>
+          <h4 class="white curvy mt-3">Yes, you read that correctly…free!</h4>
+          <div class="d-flex justify-content-center w-100 mt-5">
+            <button type="button" class="btn btn-create-registry-nb bold-button-white-text">CREATE REGISTRY</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Free delivery section end -->
+  <!-- brands section -->
+  <section class="lb-brands-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h4>BRANDS GALORE</h4>
+          <h4 class="curvy">The best brands from around the world</h4>
+        </div>
+      </div>
+      <div class="d-flex flex-wrap justify-content-center mt-5 lb-brand-images">
+        <img src="images/brand-logo-1.png" class="ml-3 mr-3 mt-3 mb-3 align-self-center" alt="" title="">
+        <img src="images/brand-logo-2.png" class="ml-3 mr-3 mt-3 mb-3 align-self-center" alt="" title="">
+        <img src="images/brand-logo-3.png" class="ml-3 mr-3 mt-3 mb-3 align-self-center" alt="" title="">
+        <img src="images/brand-logo-4.png" class="ml-3 mr-3 mt-3 mb-3 align-self-center" alt="" title="">
+        <img src="images/brand-logo-5.png" class="ml-3 mr-3 mt-3 mb-3 align-self-center" alt="" title="">
+        <img src="images/brand-logo-6.png" class="ml-3 mr-3 mt-3 mb-3 align-self-center" alt="" title="">
+        <img src="images/brand-logo-7.png" class="ml-3 mr-3 mt-3 mb-3 align-self-center" alt="" title="">
+      </div>
+      <div class="d-flex justify-content-center w-100 mt-5">
+        <button type="button" class="btn btn-create-registry-nb bold-button-white-text">EXPLORE GIFTS</button>
+      </div>
+    </div>
+  </section>
+  <!-- brands section end -->
+  <!-- questions section -->
+  <section class="lb-questions-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h4 class="white">DO YOU HAVE QUESTIONS?</h4>
+          <h4 class="white curvy mt-4 mt-md-0">Find out about deliveries, our returns policy and more</h4>
+          <a href="#" class="link-read-more bold-button-white-text mt-5">READ FAQs<span class="ml-3"><img src="images/read-more-arrow.png"
+                alt="" title=""></span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- questions section end -->
+  <!-- gift style section -->
+  <section class="lb-gift-style-section">
+    <div class="row no-gutters align-items-stretch flex-column flex-md-row">
+      <div class="col-12 col-md-6 d-flex justify-content-center align-items-center">
+        <div class="lb-style-text text-center pt-5 pb-5 pt-md-0 pb-md-0">
+          <h3 class="style-ext">YOUR GIFTS YOUR STYLE </h3>
+          <h4 class="curvy mt-4">Gifts you actually love</h4>
+          <div class="d-flex justify-content-center w-100 mt-5">
+            <button type="button" class="btn btn-create-registry-nb bold-button-white-text mt-2">EXPLORE GIFTS</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 order-first order-md-2">
+        <img src="images/style-image.png" class="w-100" alt="" title="">
+      </div>
+    </div>
+  </section>
+  <!-- gift style section end -->
+  <!-- Footer start -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-5 mt-5 mt-lg-0">
+          <div class="lb-footer-logo mb-4">
+            <img src="images/footer-logo.png" alt="" title="">
+          </div>
+          <div class="lb-social-links d-flex justify-content-start align-items-center mt-5 flex-wrap flex-xl-nowrap">
+            <a href="#" class="mt-2"><img src="images/fb-icon.jpg" alt=""></a>
+            <a href="#" class="mt-2"><img src="images/twitter-icon.jpg" alt=""></a>
+            <a href="#" class="mt-2"><img src="images/pinterest-icon.jpg" alt=""></a>
+            <a href="#" class="mt-2"><img src="images/instagram-icon.jpg" alt=""></a>
+            <a href="#" class="mt-2">@LABAYIT #MAGICALMOMENTS</a>
+          </div>
+          <div class="lb-copywrite white-body-text mt-4">
+            © La’Bayit, 2018. All Rights Reserved.
+          </div>
+        </div>
+        <div class="col-12 col-lg-7 order-first order-lg-2">
+          <div class="d-flex lb-footer-links justify-content-between flex-column flex-md-row">
+            <div class="mt-3 mt-md-0">
+              <span class="bold-button-white-text">ABOUT</span>
+              <ul>
+                <li><a href="#">Our Story</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Become a Vendor</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Use</a></li>
+              </ul>
+            </div>
+            <div class="mt-3 mt-md-0">
+              <span class="bold-button-white-text">ACCOUNT</span>
+              <ul>
+                <li><a href="#">Log In</a></li>
+                <li><a href="#">Manage Registry</a></li>
+                <li><a href="#">Orders</a></li>
+                <li><a href="#">Account Settings</a></li>
+              </ul>
+            </div>
+            <div class="mt-3 mt-md-0">
+              <span class="bold-button-white-text">REGISTRY</span>
+              <ul>
+                <li><a href="#">Create Registry</a></li>
+                <li><a href="#">Manage Registry</a></li>
+                <li><a href="#">Find Registry</a></li>
+              </ul>
+            </div>
+            <div class="mt-3 mt-md-0">
+              <span class="bold-button-white-text">STORE</span>
+              <ul>
+                <li><a href="#">New Arrivals</a></li>
+                <li><a href="#">Brands</a></li>
+              </ul>
+            </div>
+            <div class="mt-3 mt-md-0">
+                <span class="bold-button-white-text">CONTACT</span>
+                <ul>
+                  <li><a href="mailto:support@labayitgifts.com">support@labayitgifts.com</a></li>
+                  <li><a href="#">+972-58-627-4087</a></li>
+                </ul>
+                <a href="#" class="d-block mt-3"><img src="images/message-us-btn.jpg" alt=""></a>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Footer end -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="js/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
     crossorigin="anonymous"></script>
   <script src="js/bootstrap.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
   <script>
-    $(".navbar-toggler").click(function(){
-      $(".mob-menu-bg").animate ({
+    $(".navbar-toggler").click(function () {
+      $(".mob-menu-bg").animate({
         top: "0%"
-      },400);
+      }, 400);
     })
-    $(".lb-cross-btn").click(function(){
-      $(".mob-menu-bg").animate ({
+    $(".lb-cross-btn").click(function () {
+      $(".mob-menu-bg").animate({
         top: "-100%"
-      },400);
+      }, 400);
     })
-    
+    $(document).ready(function () {
+      $(".owl-carousel").owlCarousel({
+        responsiveClass: true,
+        responsive: {
+          0: {
+            items: 1,
+            nav: false,
+            loop: true,
+            mouseDrag: true
+          },
+          600: {
+            items: 2,
+            nav: false,
+            mouseDrag: true
+          },
+          768: {
+            items: 3,
+            nav: false,
+            mouseDrag: true
+          },
+          1000: {
+            items: 4,
+            nav: false,
+            mouseDrag: true
+          },
+          1200: {
+            items: 5,
+            nav: false,
+            loop: false,
+            mouseDrag: false
+          }
+        }
+      });
+    });
   </script>
 </body>
 

@@ -48,13 +48,16 @@ h3{
     font-size: 48px;
     color: $charcoal-grey;
 }
+h3.style-ext{
+    font-family: 'andadabold';
+}
 h4{
     font-family: 'andadabold';
     font-size: 36px;
     color: $charcoal-grey;
 }
 h4.white{
-    color: $white-text;
+    color: $white-text !important;
 }
 h4.curvy{
     font-family: 'xiomararegular';
@@ -90,6 +93,22 @@ h4.curvy{
 	-webkit-border-radius: $radius;
 	-moz-border-radius: $radius;
 }
+@mixin placeholder-color($color) {
+    &::-webkit-input-placeholder { /* WebKit browsers */
+        color: $color;
+    }
+    &:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+        color: $color;
+    }
+    &::-moz-placeholder { /* Mozilla Firefox 19+ */
+        color: $color;
+    }
+    &:-ms-input-placeholder { /* Internet Explorer 10+ */
+        color: $color;
+    }
+  }
+
+
 
 /* Mixin */
 
@@ -98,4 +117,12 @@ a{
 }
 .button {
     transition: all 0.5s ease;
+}
+.full-link {
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
