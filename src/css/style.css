@@ -258,6 +258,40 @@ a {
   .btn-create-registry-nb:hover {
     background: rgba(97, 197, 192, 0.699); }
 
+.btn-signup {
+  border-radius: 26px;
+  -webkit-border-radius: 26px;
+  -moz-border-radius: 26px;
+  background: #934d6b;
+  border: none;
+  outline: none;
+  height: 48px;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: bold; }
+  .btn-signup:hover {
+    background: #60354b; }
+
+.btn-signup-thirdparty {
+  border-radius: 26px;
+  -webkit-border-radius: 26px;
+  -moz-border-radius: 26px;
+  background: #64c1bd;
+  border: none;
+  outline: none;
+  height: 48px;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: bold; }
+  .btn-signup-thirdparty:hover {
+    background: rgba(97, 197, 192, 0.699); }
+
 .lb-find-couple {
   background: #404352;
   padding: 80px 15px; }
@@ -293,6 +327,37 @@ a {
   .lb-custom-input:-ms-input-placeholder {
     /* Internet Explorer 10+ */
     color: #bcbcbc; }
+
+.lb-custom-input-border {
+  height: 48px;
+  border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border: none;
+  outline: none;
+  padding: 0px 12px;
+  line-height: 48px;
+  width: 100%;
+  border: 1px solid #343434; }
+  .lb-custom-input-border::-webkit-input-placeholder {
+    /* WebKit browsers */
+    color: #bcbcbc; }
+  .lb-custom-input-border:-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    color: #bcbcbc; }
+  .lb-custom-input-border::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    color: #bcbcbc; }
+  .lb-custom-input-border:-ms-input-placeholder {
+    /* Internet Explorer 10+ */
+    color: #bcbcbc; }
+
+.from-star-color {
+  color: #e41a70; }
+
+.lb-form-layout label {
+  margin-bottom: 15px;
+  font-weight: bold; }
 
 .lb-free-delivery {
   padding: 80px 15px;
@@ -383,6 +448,36 @@ footer {
         footer .lb-footer-links ul li a:hover {
           text-decoration: none;
           color: #64c1bd; }
+
+@media (min-width: 992px) {
+  #signupModal .modal-lg {
+    max-width: 600px; } }
+
+#signupModal .modal-header {
+  border-bottom: none; }
+
+#signupModal .modal-body {
+  padding: 0px 60px 60px 50px; }
+
+#signupModal .modal-content {
+  border-radius: 0px;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px; }
+
+#signupModal .lb-sign-up-logo {
+  width: 120px; }
+  #signupModal .lb-sign-up-logo img {
+    width: 100%; }
+
+.lb-forgot-password {
+  font-size: 12px;
+  color: #404352; }
+
+.lb-login-terms {
+  font-size: 18px;
+  color: #bcbcbc; }
+  .lb-login-terms a {
+    color: #8bd1ce; }
 
 .lb-home-banner {
   position: relative;

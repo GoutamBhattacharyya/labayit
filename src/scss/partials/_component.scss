@@ -183,6 +183,38 @@
         background: $theme-green-button-hover;
     }
 }
+.btn-signup {
+    @include border-radius(26px);
+    background: $dark-mauve;
+    border: none;
+    outline: none;
+    height: 48px;
+    width: 100%;
+    text-align: center;
+    color: $white-text;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+    &:hover{
+        background: $purple-brown;
+    }
+}
+.btn-signup-thirdparty {
+    @include border-radius(26px);
+    background: $theme-green-button;
+    border: none;
+    outline: none;
+    height: 48px;
+    width: 100%;
+    text-align: center;
+    color: $white-text;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+    &:hover{
+        background: $theme-green-button-hover;
+    }
+}
 .lb-find-couple {
     background: $charcoal-grey;
     padding: 80px 15px;
@@ -209,7 +241,26 @@
     line-height: 48px;
     width: 100%;
 }
-
+.lb-custom-input-border{
+    height: 48px;
+    @include border-radius(2px);
+    @include placeholder-color($placeholder-color);
+    border: none;
+    outline: none;
+    padding: 0px 12px;
+    line-height: 48px;
+    width: 100%;
+    border: 1px solid $curvy-text;
+}
+.from-star-color {
+    color: $from-star-color ;
+}
+.lb-form-layout {
+    label{
+        margin-bottom: 15px;
+        font-weight: bold;
+    }
+}
 .lb-free-delivery {
     padding: 80px 15px;
     background: $charcoal-grey;
@@ -321,5 +372,39 @@ footer{
                 }
             }
         }
+    }
+}
+
+#signupModal{
+    .modal-lg {
+        @media (min-width: 992px) {
+            max-width: 600px;
+        }
+    }
+    .modal-header {
+        border-bottom: none;
+    }
+    .modal-body{
+        padding: 0px 60px 60px 50px;
+    }
+    .modal-content {
+        @include border-radius(0px);
+    }
+    .lb-sign-up-logo {
+        width: 120px;
+        img{
+            width: 100%;
+        }
+    }
+}
+.lb-forgot-password {
+    font-size: 12px;
+    color: $charcoal-grey;
+}
+.lb-login-terms {
+    font-size: 18px;
+    color: $placeholder-color;
+    a{
+        color: $pale-teal;
     }
 }
