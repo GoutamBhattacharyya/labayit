@@ -1,0 +1,174 @@
+.lb-db-profile-info {
+    background: url(../images/heart-pattern.png) repeat 0px 5px;
+    padding-top: 60px;
+    padding-bottom: 25px;
+    margin-top: 175px;
+    position: relative;
+    min-height: 250px;
+    margin-top: 147px;
+    @media (min-width: 768px) {
+        margin-top: 89px;
+    }
+    @media (min-width: 992px) {
+        margin-top: 175px;
+    }
+    .lb-db-profile-content {
+        position: relative;
+        z-index: 2;
+        .container {
+            max-width: 1260px;
+        }
+    }
+}
+.lb-your-regsitry {
+    margin-top: 35px;
+    @media (min-width: 992px) {
+        margin-top: -50px;
+    }
+}
+.lb-db-user-name {
+    width: 100%;
+}
+
+.profile-name-box {
+    h2{
+        font-size: 28px;
+        @media (min-width: 768px) {
+            font-size: 40px;
+        }
+        @media (min-width: 992px) {
+            font-size: 64px;
+        }
+    }
+    .lb-db-custom-input-edit {}
+}
+.lb-db-remaining-date {
+    h3{
+        font-size: 25px;
+        @media (min-width: 768px) {
+            font-size: 30px;
+        }
+        @media (min-width: 992px) {
+            font-size: 48px;
+        }
+    }
+}
+.lb-db-user-date {
+    h3{
+        font-size: 25px;
+        @media (min-width: 768px) {
+            font-size: 30px;
+        }
+        @media (min-width: 992px) {
+            font-size: 48px;
+        }
+    }
+}
+.lb-db-add-friend{
+    left: 50%;
+    right: 0;
+    transform: translateX(-50%);
+    top: -56px;    
+    background: url(../images/add-friend-btn.png) top left no-repeat;
+    width: 62px;
+    height: 62px;
+    text-indent: -9999px;   
+    @media (min-width: 1025px) {
+        right: 5%;
+        left: auto;
+        top: -35px;
+    }
+    @media (max-width: 1024px) {
+        top: -56px;
+    }
+}
+.ui-datepicker {
+    width: 368px;
+    padding: 30px 55px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 4px 24px 0 rgba(0, 0, 0, 0.1);
+}
+.ui-datepicker table {
+    font-family: 'Andada', serif;
+    font-weight: 300;
+}
+.ui-datepicker th {
+    font-weight: 300;
+}
+#ui-datepicker-div {
+    position: absolute !important;
+    left: 50% !important;
+    transform: translateX(-60%);
+}
+.ui-widget {
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.ui-widget-header {
+    background: transparent;
+    border: none;
+}
+
+.ui-datepicker .ui-datepicker-next .ui-icon {
+    background-image: url(../images/calender-right.png) !important;
+}
+
+.ui-datepicker .ui-datepicker-prev .ui-icon {
+    background-image: url(../images/calender-left.png) !important;
+}
+
+.ui-datepicker .ui-datepicker-prev span,
+.ui-datepicker .ui-datepicker-next span {
+    margin-left: 0px;
+    margin-top: 0px;
+    top: -2px;
+    left: 0px;
+}
+
+.ui-datepicker .ui-datepicker-prev,
+.ui-datepicker .ui-datepicker-next {
+    width: 17px;
+    height: 26px;
+}
+
+.ui-state-hover,
+.ui-widget-content .ui-state-hover,
+.ui-widget-header .ui-state-hover {
+    background: transparent;
+    border: none;
+}
+
+.ui-datepicker .ui-datepicker-next {
+    right: 40px;
+    top: 9px;
+}
+
+.ui-datepicker .ui-datepicker-prev {
+    left: 40px;
+    top: 9px;
+}
+
+.ui-icon {
+    width: 17px;
+    height: 26px;
+}
+
+.ui-icon-circle-triangle-e {
+    background-position: 0 0;
+}
+
+.ui-icon-circle-triangle-w {
+    background-position: 0 0;
+}
+
+.ui-datepicker .ui-datepicker-prev {}
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active {
+    background: transparent;
+    border: none;
+}
+
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover {
+    color: $theme-green-button-hover;
+}

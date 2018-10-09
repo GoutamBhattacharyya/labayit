@@ -1,5 +1,6 @@
 /* Font */
 @import url("https://fonts.googleapis.com/css?family=Noto+Sans:400,400i,700,700i");
+@import url("https://fonts.googleapis.com/css?family=Andada");
 @font-face {
   font-family: 'andadabold';
   src: url("../fonts/webfontkit-andada-bold/andada-bold-webfont.woff2") format("woff2"), url("../fonts/webfontkit-andada-bold/andada-bold-webfont.woff") format("woff");
@@ -35,6 +36,9 @@ h2 {
 
 h2.white {
   color: #fff; }
+
+h2.black {
+  color: #404352; }
 
 h3 {
   font-family: 'Noto Sans', sans-serif;
@@ -292,6 +296,71 @@ a {
   .btn-signup-thirdparty:hover {
     background: rgba(97, 197, 192, 0.699); }
 
+.btn-addcollaborator {
+  border-radius: 26px;
+  -webkit-border-radius: 26px;
+  -moz-border-radius: 26px;
+  background: #934d6b;
+  border: none;
+  outline: none;
+  height: 48px;
+  width: 256px;
+  text-align: center;
+  color: #fff;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: bold; }
+  .btn-addcollaborator:hover {
+    background: #60354b; }
+
+.btn-preview {
+  border-radius: 26px;
+  -webkit-border-radius: 26px;
+  -moz-border-radius: 26px;
+  background: transparent;
+  border: 3px solid #404352;
+  outline: none;
+  height: 48px;
+  width: 160px;
+  text-align: center;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: bold;
+  max-width: 160px;
+  color: #404352; }
+  .btn-preview:hover {
+    background: #404352;
+    color: #fff; }
+
+.btn-make-visible {
+  border-radius: 26px;
+  -webkit-border-radius: 26px;
+  -moz-border-radius: 26px;
+  background: #e03880;
+  border: none;
+  outline: none;
+  height: 48px;
+  width: 214px;
+  text-align: center;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #fff; }
+  .btn-make-visible:hover {
+    background: #934d6b;
+    color: #fff; }
+
+.btn-add-gifts {
+  border-radius: 26px;
+  -webkit-border-radius: 26px;
+  -moz-border-radius: 26px;
+  background: #64c1bd;
+  padding: 11px 47px;
+  text-align: center;
+  width: 290px; }
+  .btn-add-gifts:hover {
+    background: rgba(97, 197, 192, 0.699); }
+
 .lb-find-couple {
   background: #404352;
   padding: 80px 15px; }
@@ -349,6 +418,78 @@ a {
     /* Mozilla Firefox 19+ */
     color: #bcbcbc; }
   .lb-custom-input-border:-ms-input-placeholder {
+    /* Internet Explorer 10+ */
+    color: #bcbcbc; }
+
+.lb-db-custom-input-edit {
+  font-family: 'andadabold';
+  line-height: 30px;
+  font-size: 28px;
+  max-width: 280px;
+  color: #404352;
+  border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border: none;
+  outline: none;
+  padding: 0px 12px;
+  border: 1px solid #343434; }
+  @media (min-width: 768px) {
+    .lb-db-custom-input-edit {
+      line-height: 42px;
+      font-size: 40px;
+      max-width: none; } }
+  @media (min-width: 992px) {
+    .lb-db-custom-input-edit {
+      line-height: 66px;
+      font-size: 64px; } }
+  .lb-db-custom-input-edit::-webkit-input-placeholder {
+    /* WebKit browsers */
+    color: #bcbcbc; }
+  .lb-db-custom-input-edit:-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    color: #bcbcbc; }
+  .lb-db-custom-input-edit::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    color: #bcbcbc; }
+  .lb-db-custom-input-edit:-ms-input-placeholder {
+    /* Internet Explorer 10+ */
+    color: #bcbcbc; }
+
+.lb-db-custom-date-edit {
+  font-family: 'Noto Sans', sans-serif;
+  line-height: 27px;
+  height: 27px;
+  color: #404352;
+  border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border: none;
+  outline: none;
+  padding: 0px 12px;
+  border: 1px solid #343434; }
+  @media (min-width: 768px) {
+    .lb-db-custom-date-edit {
+      line-height: 32px;
+      height: 32px;
+      max-width: none;
+      width: 142px; } }
+  @media (min-width: 992px) {
+    .lb-db-custom-date-edit {
+      line-height: 48px;
+      height: 48px;
+      max-width: none;
+      width: 280px; } }
+  .lb-db-custom-date-edit::-webkit-input-placeholder {
+    /* WebKit browsers */
+    color: #bcbcbc; }
+  .lb-db-custom-date-edit:-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    color: #bcbcbc; }
+  .lb-db-custom-date-edit::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    color: #bcbcbc; }
+  .lb-db-custom-date-edit:-ms-input-placeholder {
     /* Internet Explorer 10+ */
     color: #bcbcbc; }
 
@@ -478,6 +619,169 @@ footer {
   color: #bcbcbc; }
   .lb-login-terms a {
     color: #8bd1ce; }
+
+.btn-fd {
+  background: url(../images/btn-fd-sq.png);
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  left: -50px;
+  top: 150px;
+  border: 1px solid #62646f;
+  border-right: none; }
+
+.btn-bk {
+  background: url(../images/btn-bk-sq.png);
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  left: -50px;
+  top: 150px;
+  border: 1px solid #62646f;
+  border-right: none; }
+
+.sub-header {
+  padding: 30px 0px;
+  margin-top: 89px;
+  background: #404352;
+  transition: right 0.5s ease; }
+  @media (max-width: 991px) {
+    .sub-header {
+      width: 200px;
+      height: 100%;
+      margin-top: 0px;
+      right: -200px;
+      left: auto;
+      border-left: 1px solid #62646f; } }
+  .sub-header.move-right {
+    right: 0px; }
+  .sub-header .container {
+    max-width: 1360px; }
+  .sub-header .sub-header-menu {
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+    width: 98%;
+    margin: 0 auto; }
+    @media (min-width: 1140px) {
+      .sub-header .sub-header-menu {
+        width: 100%; } }
+    .sub-header .sub-header-menu li {
+      display: inline-block;
+      padding: 0px 10px; }
+      @media (max-width: 991px) {
+        .sub-header .sub-header-menu li {
+          display: block;
+          text-align: left;
+          padding-left: 0px;
+          padding-right: 0px; } }
+      @media (min-width: 1140px) {
+        .sub-header .sub-header-menu li {
+          padding: 0px 12px; } }
+      @media (min-width: 1300px) {
+        .sub-header .sub-header-menu li {
+          padding: 0px 23px; } }
+      .sub-header .sub-header-menu li:first-child {
+        padding-left: 0px; }
+      .sub-header .sub-header-menu li:last-child {
+        padding-right: 0px; }
+      .sub-header .sub-header-menu li a {
+        color: #fff;
+        font-size: 14px; }
+        .sub-header .sub-header-menu li a:hover {
+          text-decoration: none;
+          color: rgba(97, 197, 192, 0.699); }
+          @media (max-width: 991px) {
+            .sub-header .sub-header-menu li a:hover {
+              color: #fff;
+              background: rgba(97, 197, 192, 0.699); } }
+        @media (max-width: 991px) {
+          .sub-header .sub-header-menu li a {
+            padding: 5px 15px;
+            display: block;
+            width: 100%; } }
+        @media (min-width: 1140px) {
+          .sub-header .sub-header-menu li a {
+            font-size: 16px; } }
+        @media (min-width: 1300px) {
+          .sub-header .sub-header-menu li a {
+            font-size: 16px; } }
+        @media (min-width: 13600px) {
+          .sub-header .sub-header-menu li a {
+            font-size: 18px; } }
+
+.lb-db-overly-green {
+  background: rgba(139, 209, 206, 0.9);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 1px; }
+
+.upload-btn-wrapper {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  margin-top: 15px; }
+  @media (min-width: 992px) {
+    .upload-btn-wrapper {
+      margin-top: 0px;
+      top: -100px; } }
+  .upload-btn-wrapper .btnUP {
+    width: 200px;
+    height: 200px;
+    border-radius: 200px;
+    -webkit-border-radius: 200px;
+    -moz-border-radius: 200px;
+    background: #404352;
+    color: #fff;
+    background-image: url(../images/add-image.png);
+    background-position: center 65px;
+    background-repeat: no-repeat;
+    outline: none;
+    border: 3px solid #fff;
+    position: relative;
+    cursor: pointer;
+    pointer-events: auto; }
+    .upload-btn-wrapper .btnUP:before {
+      content: "ADD IMAGE";
+      position: absolute;
+      top: 35px;
+      left: 50%;
+      transform: translateX(-50%); }
+  .upload-btn-wrapper input[type=file] {
+    font-size: 200px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    cursor: pointer; }
+
+.white-tooltip {
+  top: -30px !important;
+  left: -10px !important;
+  padding: 0px !important;
+  opacity: 1 !important;
+  z-index: 1049;
+  -webkit-box-shadow: 0px 13px 11px -6px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0px 13px 11px -6px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 13px 11px -6px rgba(0, 0, 0, 0.15); }
+  @media (max-width: 1024px) {
+    .white-tooltip {
+      display: none !important; } }
+  .white-tooltip .tooltip-inner {
+    background: #fff;
+    color: #000;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    padding: 15px;
+    max-width: 210px; }
+
+.white-tooltip .arrow::before, .white-tooltip .bs-tooltip-auto[x-placement^="top"] .arrow::before {
+  border-width: 2rem .8rem 0;
+  border-top-color: #fff; }
 
 .lb-home-banner {
   position: relative;
@@ -609,3 +913,152 @@ footer {
 .lb-gifts-easy-section .lb-gift-title {
   margin-top: 85px;
   margin-bottom: 45px; }
+
+.lb-db-profile-info {
+  background: url(../images/heart-pattern.png) repeat 0px 5px;
+  padding-top: 60px;
+  padding-bottom: 25px;
+  margin-top: 175px;
+  position: relative;
+  min-height: 250px;
+  margin-top: 147px; }
+  @media (min-width: 768px) {
+    .lb-db-profile-info {
+      margin-top: 89px; } }
+  @media (min-width: 992px) {
+    .lb-db-profile-info {
+      margin-top: 175px; } }
+  .lb-db-profile-info .lb-db-profile-content {
+    position: relative;
+    z-index: 2; }
+    .lb-db-profile-info .lb-db-profile-content .container {
+      max-width: 1260px; }
+
+.lb-your-regsitry {
+  margin-top: 35px; }
+  @media (min-width: 992px) {
+    .lb-your-regsitry {
+      margin-top: -50px; } }
+
+.lb-db-user-name {
+  width: 100%; }
+
+.profile-name-box h2 {
+  font-size: 28px; }
+  @media (min-width: 768px) {
+    .profile-name-box h2 {
+      font-size: 40px; } }
+  @media (min-width: 992px) {
+    .profile-name-box h2 {
+      font-size: 64px; } }
+
+.lb-db-remaining-date h3 {
+  font-size: 25px; }
+  @media (min-width: 768px) {
+    .lb-db-remaining-date h3 {
+      font-size: 30px; } }
+  @media (min-width: 992px) {
+    .lb-db-remaining-date h3 {
+      font-size: 48px; } }
+
+.lb-db-user-date h3 {
+  font-size: 25px; }
+  @media (min-width: 768px) {
+    .lb-db-user-date h3 {
+      font-size: 30px; } }
+  @media (min-width: 992px) {
+    .lb-db-user-date h3 {
+      font-size: 48px; } }
+
+.lb-db-add-friend {
+  left: 50%;
+  right: 0;
+  transform: translateX(-50%);
+  top: -56px;
+  background: url(../images/add-friend-btn.png) top left no-repeat;
+  width: 62px;
+  height: 62px;
+  text-indent: -9999px; }
+  @media (min-width: 1025px) {
+    .lb-db-add-friend {
+      right: 5%;
+      left: auto;
+      top: -35px; } }
+  @media (max-width: 1024px) {
+    .lb-db-add-friend {
+      top: -56px; } }
+
+.ui-datepicker {
+  width: 368px;
+  padding: 30px 55px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 4px 24px 0 rgba(0, 0, 0, 0.1); }
+
+.ui-datepicker table {
+  font-family: 'Andada', serif;
+  font-weight: 300; }
+
+.ui-datepicker th {
+  font-weight: 300; }
+
+#ui-datepicker-div {
+  position: absolute !important;
+  left: 50% !important;
+  transform: translateX(-60%); }
+
+.ui-widget {
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: bold;
+  font-size: 18px; }
+
+.ui-widget-header {
+  background: transparent;
+  border: none; }
+
+.ui-datepicker .ui-datepicker-next .ui-icon {
+  background-image: url(../images/calender-right.png) !important; }
+
+.ui-datepicker .ui-datepicker-prev .ui-icon {
+  background-image: url(../images/calender-left.png) !important; }
+
+.ui-datepicker .ui-datepicker-prev span,
+.ui-datepicker .ui-datepicker-next span {
+  margin-left: 0px;
+  margin-top: 0px;
+  top: -2px;
+  left: 0px; }
+
+.ui-datepicker .ui-datepicker-prev,
+.ui-datepicker .ui-datepicker-next {
+  width: 17px;
+  height: 26px; }
+
+.ui-state-hover,
+.ui-widget-content .ui-state-hover,
+.ui-widget-header .ui-state-hover {
+  background: transparent;
+  border: none; }
+
+.ui-datepicker .ui-datepicker-next {
+  right: 40px;
+  top: 9px; }
+
+.ui-datepicker .ui-datepicker-prev {
+  left: 40px;
+  top: 9px; }
+
+.ui-icon {
+  width: 17px;
+  height: 26px; }
+
+.ui-icon-circle-triangle-e {
+  background-position: 0 0; }
+
+.ui-icon-circle-triangle-w {
+  background-position: 0 0; }
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active {
+  background: transparent;
+  border: none; }
+
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover {
+  color: rgba(97, 197, 192, 0.699); }
