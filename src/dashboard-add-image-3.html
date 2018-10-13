@@ -236,40 +236,29 @@
   <!-- Footer end -->
 
   <!-- Modal -->
-  <div class="modal fade bd-example-modal-lg" id="themeModal" tabindex="-1" role="dialog" aria-labelledby="themeModalLabel"
+  <div class="modal fade bd-example-modal-lg" id="themeModal-small" tabindex="-1" role="dialog" aria-labelledby="themeModalSmallLabel"
     aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
       <div class="modal-content">
-        <div class="modal-header">
-          <div class="d-flex align-items-center flex-column w-100">
-            <div class="lb-sign-up-logo mt-4 pt-3">
-              <img src="images/logo.png" alt="">
-            </div>
-            <h4 class="curvy mt-3 text-center">Invite your fiancé to join the fun!</h4>
+        <div class="modal-header">          
+          <div class="d-flex">
+              <span class="bold-button-black-text">Add Profile Image</span>
           </div>
-          <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button> -->
-          <a href="#" data-dismiss="modal" class="lb-cross-btn">
-            <img src="images/gray-cross.png" alt="">
-          </a>
         </div>
         <div class="modal-body">
-          <div class="lb-form-layout">
-            <form>
-              <div class="form-group">
-                <label class="lb-required" for="">EMAIL                  
-                </label>
-                <input type="text" class="form-control lb-custom-input-border" value="bracharlamm@gmail.com" required placeholder="Email">
-              </div>
-              <div class="lb-login-terms text-center">
-                  <p>Note: The collaborator will gain full access to your account. </p>
-                </div>
-              <div class="form-group pt-10 pb-40 mt-4 text-center">
-                <button type="button" class="btn btn-addcollaborator" type="button">ADD COLLABORATOR</button>
-              </div>
-            </form>            
+          <div class="lb-db-drag-symbol bold-button-white-text d-md-flex align-items-center text-center d-none">
+            <img src="images/drag-icon.png" class="ml-3 mr-3" alt="" title="">
+            <span>Drag to reposition</span></div>  
+          <div class="lb-db-image-holder m-auto">
+                <img src="images/mask-gr.png" class="lb-db-mask-image" alt="" title="">
+              <img src="images/profile-pic.png" class="lb-db-profile-image" alt="" title="">
           </div>
+        </div>
+        <div class="modal-footer justify-content-center">
+            <div class="lb-db-photoUpdateCTA d-flex flex-column flex-md-row justify-content-center align-items-center align-content-center">
+                <button type="button" class="btn btn-preview mr-md-4">CANCEL</button>
+                <button type="button" class="btn btn-create-registry-nb bold-button-white-text mt-3 mt-md-0">SAVE</button>
+            </div>
         </div>
       </div>
     </div>

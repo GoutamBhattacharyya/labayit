@@ -64,6 +64,17 @@
         }
     }
 }
+.lb-db-drag-symbol {
+    width: 240px;
+    height: 48px;
+    opacity: .75;
+    background: #404352;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 30px;
+    z-index: 10;
+}
 .lb-db-add-friend{
     left: 50%;
     right: 0;
@@ -171,4 +182,27 @@
 
 .ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover {
     color: $theme-green-button-hover;
+}
+.lb-db-products {
+    .container {
+        max-width: 1260px;  
+    }
+}
+.db-product-left-panel{
+    width: 100%;
+    @media (min-width: 768px) {
+        width: 202px;
+    }
+    margin-right: 18px;
+    border-top: 1px solid $charcoal-grey;
+}
+.db-product-right-panel{
+    width: 100%;
+    @media (min-width: 768px) {
+        width: calc(100% - 220px);
+    }
+}
+.lb-cat-title {
+    padding-top: 20px;
+    padding-bottom: 15px;
 }

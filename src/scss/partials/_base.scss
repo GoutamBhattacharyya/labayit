@@ -76,6 +76,7 @@ h4.curvy{
     font-size: 18px;
     color: $charcoal-grey;
 }
+
 .bold-button-white-text {
     font-family: 'Noto Sans', sans-serif;
     font-weight: bold;
@@ -88,7 +89,20 @@ h4.curvy{
     font-size: 16px;
     color: $charcoal-grey;
 }
-
+.product-card-input-text {
+    font-family: 'Noto Sans', sans-serif;
+    letter-spacing: 0.1px;
+    text-transform: uppercase;
+    font-size: 16px;
+    color: $placeholder-color;
+}
+.product-card-price{
+    font-family: 'Noto Sans', sans-serif;
+    letter-spacing: 0.1px;
+    text-transform: uppercase;
+    font-size: 16px;
+    color: $dark-mauve;
+}
 /*Font*/
 
 /* Mixin */
