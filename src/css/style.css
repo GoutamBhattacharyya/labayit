@@ -1035,12 +1035,21 @@ footer {
   width: 100%;
   margin-bottom: 30px;
   min-height: 445px; }
+  .lb-registry-product-card:nth-child(4n) .lb-product-card-menu-container {
+    left: -145px; }
+  @media (max-width: 575px) {
+    .lb-registry-product-card .lb-product-card-menu-container {
+      left: -145px; } }
   @media (min-width: 576px) {
     .lb-registry-product-card {
-      width: 48%; } }
+      width: 48%; }
+      .lb-registry-product-card:nth-child(2n) .lb-product-card-menu-container {
+        left: -145px; } }
   @media (min-width: 768px) {
     .lb-registry-product-card {
-      width: 48%; } }
+      width: 48%; }
+      .lb-registry-product-card:nth-child(2n) .lb-product-card-menu-container {
+        left: -145px; } }
   @media (min-width: 1200px) {
     .lb-registry-product-card {
       width: 228px; } }
@@ -1083,6 +1092,31 @@ footer {
   top: 10px;
   right: 10px;
   z-index: 10; }
+
+.lb-product-card-menu-container {
+  position: absolute;
+  display: none;
+  top: -11px;
+  left: 53px;
+  background: #fff;
+  width: 175px;
+  -webkit-box-shadow: 0px 0px 16px 1px rgba(0, 0, 0, 0.37);
+  -moz-box-shadow: 0px 0px 16px 1px rgba(0, 0, 0, 0.37);
+  box-shadow: 0px 0px 16px 1px rgba(0, 0, 0, 0.37); }
+  .lb-product-card-menu-container ul {
+    padding: 0px;
+    margin: 0px; }
+    .lb-product-card-menu-container ul li {
+      list-style: none;
+      font-size: 12px; }
+      .lb-product-card-menu-container ul li a {
+        display: block;
+        width: 100%;
+        padding: 5px 12px;
+        color: #000; }
+        .lb-product-card-menu-container ul li a:hover {
+          text-decoration: none;
+          background: #64c1bd; }
 
 .lb-home-banner {
   position: relative;

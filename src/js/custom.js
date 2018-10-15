@@ -156,11 +156,24 @@ $(".lb-favorite a img").click(function(event){
       case '1':
       default:
         i = '0';
-        src = '../images/favorite-fill.png';
+        src = 'images/favorite-fill.png';
         break;
       }
 
       $(this)
         .attr('src', src)
         .attr('data-index', i);
-})
+});
+
+$(".lb-product-card-menu a").on('click', function(e){  
+  e.preventDefault();
+  $(".lb-product-card-menu-container").hide();
+  $(this).next().show();
+  e.stopPropagation();
+});
+$(".lb-product-card-menu-container").click(function(e){
+  e.stopPropagation();
+});
+$(document).click(function(){
+  $(".lb-product-card-menu-container").hide();
+});
