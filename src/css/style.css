@@ -24,6 +24,10 @@ body {
 .small-body-text {
   font-size: 16px; }
 
+a:hover {
+  color: #60354b;
+  text-decoration: none; }
+
 h1 {
   font-family: 'andadabold';
   font-size: 72px;
@@ -216,7 +220,7 @@ a {
       .static-nav-header .main-menu li ul {
         display: none;
         position: relative;
-        padding: 0px 15px 8px;
+        padding: 0px 0px 0px;
         margin: 10px 0px 0px;
         z-index: 1031;
         background: rgba(139, 209, 206, 0.1); }
@@ -235,12 +239,18 @@ a {
           padding-left: 0px;
           padding-right: 0px; }
           .static-nav-header .main-menu li ul li a {
+            display: block;
+            width: 100%;
             font-weight: normal;
-            font-size: 13px; }
+            font-size: 13px;
+            padding: 5px 15px; }
             @media (min-width: 992px) {
               .static-nav-header .main-menu li ul li a {
                 font-size: 15px; } }
             .static-nav-header .main-menu li ul li a:hover {
+              padding: 5px 15px;
+              background: #64c1bd;
+              color: #404352;
               border: none; }
       .static-nav-header .main-menu li:hover ul {
         display: none; }
@@ -370,6 +380,23 @@ a {
   .btn-addcollaborator:hover {
     background: #60354b; }
 
+.btn-give-gift {
+  border-radius: 26px;
+  -webkit-border-radius: 26px;
+  -moz-border-radius: 26px;
+  background: #934d6b;
+  border: none;
+  outline: none;
+  height: 48px;
+  width: 214px;
+  text-align: center;
+  color: #fff;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: bold; }
+  .btn-give-gift:hover {
+    background: #60354b; }
+
 .btn-preview {
   border-radius: 26px;
   -webkit-border-radius: 26px;
@@ -416,6 +443,42 @@ a {
   text-align: center;
   width: 290px; }
   .btn-add-gifts:hover {
+    background: rgba(97, 197, 192, 0.699); }
+
+.btn-add-to-registry {
+  border-radius: 26px;
+  -webkit-border-radius: 26px;
+  -moz-border-radius: 26px;
+  background: #64c1bd;
+  border: none;
+  outline: none;
+  height: 33px;
+  width: 187px;
+  text-align: center;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #fff;
+  line-height: 20px; }
+  .btn-add-to-registry:hover {
+    background: rgba(97, 197, 192, 0.699); }
+
+.btn-go-to-cart {
+  border-radius: 26px;
+  -webkit-border-radius: 26px;
+  -moz-border-radius: 26px;
+  background: #64c1bd;
+  border: none;
+  outline: none;
+  height: 48px;
+  width: 161px;
+  text-align: center;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #fff;
+  line-height: 20px; }
+  .btn-go-to-cart:hover {
     background: rgba(97, 197, 192, 0.699); }
 
 .lb-find-couple {
@@ -668,6 +731,104 @@ footer {
     width: 100%; }
 
 @media (min-width: 992px) {
+  #themeModal-store-login .modal-lg {
+    max-width: 600px; } }
+
+#themeModal-store-login .modal-header {
+  border-bottom: none; }
+
+#themeModal-store-login .modal-body {
+  padding: 0px 60px 60px 50px; }
+
+#themeModal-store-login .modal-content {
+  border-radius: 0px;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px; }
+
+#themeModal-store-login .lb-sign-up-logo {
+  width: 120px; }
+  #themeModal-store-login .lb-sign-up-logo img {
+    width: 100%; }
+
+#themeModal-gift-added-to-cart .modal-header {
+  border-bottom: none; }
+
+#themeModal-gift-added-to-cart .modal-body {
+  padding: 0px 60px 60px 50px; }
+
+#themeModal-gift-added-to-cart .lb-sign-up-logo {
+  width: 120px; }
+  #themeModal-gift-added-to-cart .lb-sign-up-logo img {
+    width: 100%; }
+
+#themeModal-gift .modal-header {
+  border-bottom: none; }
+
+#themeModal-gift .modal-body {
+  padding: 0px 60px 60px 50px; }
+
+#themeModal-gift .lb-sign-up-logo {
+  width: 120px; }
+  #themeModal-gift .lb-sign-up-logo img {
+    width: 100%; }
+
+#themeModal-choose-couple .modal-header {
+  border-bottom: none; }
+
+#themeModal-choose-couple .modal-body {
+  padding: 0px 60px 60px 50px; }
+
+#themeModal-choose-couple .lb-sign-up-logo {
+  width: 120px; }
+  #themeModal-choose-couple .lb-sign-up-logo img {
+    width: 100%; }
+
+@media (min-width: 992px) {
+  #themeModal-added-cart .modal-lg {
+    max-width: 654px; } }
+
+#themeModal-added-cart .modal-header {
+  border-bottom: none; }
+
+#themeModal-added-cart .modal-body {
+  padding: 0px 60px 60px 50px; }
+
+#themeModal-added-cart .lb-sign-up-logo {
+  width: 118px; }
+  #themeModal-added-cart .lb-sign-up-logo img {
+    width: 100%; }
+
+@media (min-width: 992px) {
+  #themeModal-not-added-cart .modal-lg {
+    max-width: 654px; } }
+
+#themeModal-not-added-cart .modal-header {
+  border-bottom: none; }
+
+#themeModal-not-added-cart .modal-body {
+  padding: 0px 60px 60px 50px; }
+
+#themeModal-not-added-cart .lb-sign-up-logo {
+  width: 118px; }
+  #themeModal-not-added-cart .lb-sign-up-logo img {
+    width: 100%; }
+
+@media (min-width: 992px) {
+  #themeModal-search-couple .modal-lg {
+    max-width: 900px; } }
+
+#themeModal-search-couple .modal-header {
+  border-bottom: none; }
+
+#themeModal-search-couple .modal-body {
+  padding: 0px 60px 60px 60px; }
+
+#themeModal-search-couple .lb-sign-up-logo {
+  width: 118px; }
+  #themeModal-search-couple .lb-sign-up-logo img {
+    width: 100%; }
+
+@media (min-width: 992px) {
   #themeModal-small .modal-lg {
     max-width: 710px; } }
 
@@ -683,6 +844,29 @@ footer {
 #themeModal-small .modal-footer {
   border-top: none;
   padding-bottom: 40px; }
+
+.lb-custom-input-border {
+  height: 48px;
+  border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border: 1px solid #889ea5;
+  outline: none;
+  padding: 0px 12px;
+  line-height: 48px;
+  width: 100%; }
+  .lb-custom-input-border::-webkit-input-placeholder {
+    /* WebKit browsers */
+    color: #bcbcbc; }
+  .lb-custom-input-border:-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    color: #bcbcbc; }
+  .lb-custom-input-border::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    color: #bcbcbc; }
+  .lb-custom-input-border:-ms-input-placeholder {
+    /* Internet Explorer 10+ */
+    color: #bcbcbc; }
 
 .lb-forgot-password {
   font-size: 12px;
@@ -922,6 +1106,9 @@ footer {
   font-size: 12px;
   color: #212121; }
 
+.color-checkbox .custom-control-label {
+  position: absolute; }
+
 .custom-checkbox .custom-control-label::before {
   border-radius: 0px;
   -webkit-border-radius: 0px;
@@ -930,7 +1117,8 @@ footer {
   border: 1px solid #404352;
   width: 24px !important;
   height: 24px !important;
-  border: 1px solid #404352; }
+  border: 1px solid #404352;
+  top: 0; }
 
 /* Checkbox */
 .custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {
@@ -954,6 +1142,34 @@ footer {
   zoom: 1.5;
   top: -1px;
   left: -20px; }
+
+.color-checkbox .custom-control-input:focus ~ .custom-control-label::before {
+  box-shadow: none; }
+
+.color-checkbox .custom-control-label::before {
+  border-radius: 24px;
+  -webkit-border-radius: 24px;
+  -moz-border-radius: 24px;
+  border: none;
+  width: 24px !important;
+  height: 24px !important;
+  background-color: var(--my-color-var); }
+
+.color-checkbox .custom-control-label::after {
+  border-radius: 24px;
+  -webkit-border-radius: 24px;
+  -moz-border-radius: 24px;
+  border: none;
+  width: 24px !important;
+  height: 24px !important;
+  top: 0;
+  left: -1.5rem; }
+
+.color-checkbox .custom-control-input:checked ~ .custom-control-label::after {
+  background-color: var(--my-color-var);
+  zoom: normal;
+  top: 0;
+  left: -1.5rem; }
 
 /* Search */
 .lb-search-box {
@@ -1029,6 +1245,12 @@ footer {
       color: #404352;
       padding-top: 2px; }
 
+.lb-color-filtter ul {
+  display: flex;
+  flex-wrap: wrap; }
+  .lb-color-filtter ul li {
+    padding: 0px 4px 8px 4px; }
+
 .lb-registry-product-card {
   border: 1px solid #404352;
   position: relative;
@@ -1060,7 +1282,7 @@ footer {
     .lb-registry-product-card .lb-product-image img {
       max-width: 100%; }
   .lb-registry-product-card .lb-product-desc {
-    padding: 15px;
+    padding: 10px;
     min-height: 288px; }
   .lb-registry-product-card .lb-custom-select select {
     font-family: 'Noto Sans', sans-serif;
@@ -1117,6 +1339,75 @@ footer {
         .lb-product-card-menu-container ul li a:hover {
           text-decoration: none;
           background: #64c1bd; }
+
+.lb-category-list ul {
+  padding: 0px;
+  margin: 0px;
+  list-style: none; }
+  .lb-category-list ul li {
+    padding: 0px 5px 0px 5px;
+    margin: 0 0 3px  0;
+    list-style: none; }
+    .lb-category-list ul li a {
+      font-family: 'Noto Sans', sans-serif;
+      margin-left: 6px;
+      color: #343434;
+      font-size: 18px;
+      font-weight: bold; }
+      .lb-category-list ul li a:hover {
+        text-decoration: none;
+        color: #64c1bd; }
+
+.lb-store-sub {
+  background: #96d5d2; }
+  .lb-store-sub .sub-header-menu li {
+    position: relative; }
+    .lb-store-sub .sub-header-menu li a {
+      color: #404352; }
+      .lb-store-sub .sub-header-menu li a:hover {
+        color: #fff; }
+    .lb-store-sub .sub-header-menu li:nth-child(2):after {
+      content: "";
+      position: absolute;
+      border-bottom: 1px solid #404352;
+      width: 100%;
+      height: 1px;
+      left: 0px;
+      right: auto;
+      bottom: -1px; }
+      @media (min-width: 992px) {
+        .lb-store-sub .sub-header-menu li:nth-child(2):after {
+          border-right: 1px solid #404352;
+          width: 1px;
+          height: 45px;
+          right: 0px;
+          left: auto;
+          top: -8px; } }
+  .lb-store-sub .btn-fd {
+    background: url(../images/btn-fd-green-sq.png); }
+  .lb-store-sub .btn-bk {
+    background: url(../images/btn-bk-green-sq.png); }
+
+.lb-v-center {
+  position: relative;
+  top: -2px; }
+
+.lb-couple-search-image {
+  width: 130px;
+  height: 130px;
+  border-radius: 130px;
+  -webkit-border-radius: 130px;
+  -moz-border-radius: 130px;
+  overflow: hidden; }
+
+.lb-search-couple-info {
+  width: 100%; }
+  @media (min-width: 481px) {
+    .lb-search-couple-info {
+      width: calc(100% - 160px); } }
+  @media (min-width: 992px) {
+    .lb-search-couple-info {
+      width: calc(100% - 420px); } }
 
 .lb-home-banner {
   position: relative;
@@ -1350,6 +1641,9 @@ footer {
   position: absolute !important;
   left: 50% !important;
   transform: translateX(-60%); }
+  @media (max-width: 500px) {
+    #ui-datepicker-div {
+      transform: translateX(-56%); } }
 
 .ui-widget {
   font-family: 'Noto Sans', sans-serif;
@@ -1429,3 +1723,94 @@ footer {
 .lb-cat-title {
   padding-top: 20px;
   padding-bottom: 15px; }
+  .lb-cat-title .lb-cat-title-text {
+    width: calc(100% - 70px); }
+  .lb-cat-title span {
+    width: 68px;
+    padding-left: 5px; }
+    .lb-cat-title span a {
+      font-size: 16px;
+      color: #96d5d2;
+      font-weight: normal; }
+
+@media (min-width: 992px) {
+  .store-nav {
+    padding: 0px; } }
+
+.lb-store-nav {
+  position: relative; }
+
+.lb-accounts-dropdown {
+  display: none;
+  position: absolute;
+  list-style: none;
+  padding: 20px 0px;
+  margin: 0px;
+  background: #fff;
+  width: 240px;
+  border: solid 1px #979797;
+  top: 87px; }
+  .lb-accounts-dropdown li {
+    margin-bottom: 13px; }
+    .lb-accounts-dropdown li a {
+      font-size: 18px;
+      color: #404352;
+      padding: 5px 20px;
+      display: block; }
+      .lb-accounts-dropdown li a:hover {
+        background: #64c1bd;
+        text-decoration: none; }
+
+.lb-account-menu > a {
+  padding: 31px 0px;
+  display: block; }
+
+.lb-account-menu:hover .lb-accounts-dropdown {
+  display: block; }
+
+.lb-store-banner {
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  width: auto;
+  margin-top: 175px;
+  margin-bottom: 50px; }
+  @media (min-width: 768px) {
+    .lb-store-banner {
+      height: 625px;
+      width: 100%;
+      margin-top: 125px; } }
+  @media (min-width: 992px) {
+    .lb-store-banner {
+      height: 625px;
+      width: 100%;
+      margin-top: 175px; } }
+  .lb-store-banner .lb-store-title {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 70px; }
+    @media (max-width: 767px) {
+      .lb-store-banner .lb-store-title {
+        width: 90%;
+        margin-top: 50px; } }
+    @media (min-width: 768px) {
+      .lb-store-banner .lb-store-title {
+        width: 90%;
+        margin-top: 20px; } }
+    @media (min-width: 1025px) {
+      .lb-store-banner .lb-store-title {
+        width: auto;
+        margin-top: 20px; } }
+    @media (max-width: 767px) {
+      .lb-store-banner .lb-store-title h2 {
+        font-size: 35px; } }
+
+@media (max-width: 991px) {
+  .lb-couple-serach-result .btn-give-gift {
+    width: 100%; } }
+
+.lb-couple-serach-result {
+  display: none; }

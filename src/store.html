@@ -1,0 +1,925 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Welcome to LA'BAYIT Dashboard</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+    <!-- Store Header -->
+    <header class="static-nav-header fixed-top store-nav">
+        <div class="nav-container">
+            <div class="d-flex flex-column flex-md-row justify-content-between">
+                <div class="nav-left d-flex align-items-center justify-content-between justify-content-md-start">
+                    <div class="logo mr-5">
+                        <a href="#">
+                            <img src="images/logo.png" alt="Logo" title="Logo" class="w-100">
+                        </a>
+                    </div>
+                    <div class="navbar navbar-expand-lg navbar-light bg-light">
+                        <button class="navbar-toggler" type="button">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </div>
+                    <div class="mob-menu-bg">
+                        <a href="#" class="lb-cross-btn d-lg-none">
+                            <img src="images/white-cross.png" alt="">
+                        </a>
+                        <ul class="main-menu">
+                            <li class="d-lg-none">
+                                <a href="#">Home</a>
+                            </li>
+                            <li>
+                                <a href="#">ABOUT</a>
+                            </li>
+                            <li>
+                                <a href="#">REGISTRY</a>
+                                <ul>
+                                    <li><a href="#">Find Registry</a></li>
+                                    <li><a href="#">Create Registry</a></li>
+                                    <li><a href="#">Manage Registry</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">STORE</a>
+                                <ul>
+                                    <li><a href="#">New</a></li>
+                                    <li><a href="#">Arrivals</a></li>
+                                    <li><a href="#">Brands</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">INSPIRATION</a>
+                            </li>
+                            <li>
+                                <a href="#">HELP</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="nav-right lb-store-nav d-flex justify-content-between justify-content-md-end align-items-center mt-3 mt-md-0">
+                    <div><a href="#"><img src="images/gr-search-icon.png" alt="" title=""></a></div>
+                    <div class="lb-account-menu">
+                        <a href="#" class="bold-button-black-text ml-4">ACCOUNT</a>
+                        <ul class="lb-accounts-dropdown">
+                            <li>
+                                <a href="#">My Information</a>
+                            </li>
+                            <li>
+                                <a href="#">Delivery Coordinator</a>
+                            </li>
+                            <li>
+                                <a href="#">Email Preferences</a>
+                            </li>
+                            <li>
+                                <a href="#">My Registry Link</a>
+                            </li>
+                            <li>
+                                <a href="#">Purchased Gifts</a>
+                            </li>
+                            <li>
+                                <a href="#">Order History</a>
+                            </li>
+                            <li>
+                                <a href="#">Store Credit & Coupons</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="lb-custom-select ml-4">
+                        <select>
+                            <option>$ USD</option>
+                            <option>€ euro</option>
+                        </select>
+                    </div>
+                    <div><a href="#" class="ml-4"><img src="images/cart-icon.png" alt="" title=""></a></div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Store Header end -->
+    <!-- Sub header -->
+    <section class="sub-header lb-store-sub fixed-top">
+
+        <a href="javascript:void(0)" class="btn-fd"></a>
+        <div class="container">
+            <div class="row">
+                <ul class="sub-header-menu">
+                    <li><a href="#">Collections</a></li>
+                    <li><a href="#">Brands</a></li>
+                    <li><a href="#">Bed & Bath</a></li>
+                    <li><a href="#">Kitchen</a></li>
+                    <li><a href="#">Dining</a></li>
+                    <li><a href="#">Decor</a></li>
+                    <li><a href="#">Appliances</a></li>
+                    <li><a href="#">Judaica</a></li>
+                    <li><a href="#">Luggage</a></li>
+                    <li><a href="#">Experiences</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- Sub header end -->
+    <!-- Store Banner -->
+    <section class="lb-store-banner-section">
+        <div class="lb-store-banner" style="background-image: url(images/store-banner.png)">
+        <div class="lb-store-title">
+            <h2>Everything you need for the home of your dreams </h2>
+        </div>
+        </div>
+    </section>
+    <!-- Store Banner end -->
+    <!-- store product section -->
+    <section class="lb-db-products">
+        <div class="container">
+            <div class="d-flex justify-content-center justify-content-lg-end align-content-center flex-column flex-sm-row">
+                <div class="lb-sort-dropdown">
+                    <div class="lb-custom-select ml-0 ml-sm-3">
+                        <select>
+                            <option>Sort By Price</option>
+                            <option>Sort By popularity</option>
+                            <option>Sort By arrival</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="d-flex flex-column flex-md-row mt-4">
+                <div class="db-product-left-panel">
+                    <div class="lb-filter-set">
+                        <div class="bold-button-black-text curvy-text lb-cat-title d-flex justify-content-between">
+                            <span class="lb-cat-title-text">CATEGORY</span>
+                            <span><a href="#">Clear all</a></span>
+                        </div>
+                        <div class="lb-category-list">
+                            <ul>
+                                <li>
+                                    <div class="lb-category-menu-item d-flex align-items-center">
+                                        <img src="images/right-arrow.png" alt="">
+                                        <a href="#">Bedroom</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="lb-category-menu-item d-flex align-items-center">
+                                        <img src="images/right-arrow.png" alt="">
+                                        <a href="#">Bathroom</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="lb-category-menu-item d-flex align-items-center">
+                                        <img src="images/right-arrow.png" alt="">
+                                        <a href="#">Kitchen</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="lb-category-menu-item d-flex align-items-center">
+                                        <img src="images/right-arrow.png" alt="">
+                                        <a href="#">Dining</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="lb-category-menu-item d-flex align-items-center">
+                                        <img src="images/right-arrow.png" alt="">
+                                        <a href="#">Decor</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="lb-category-menu-item d-flex align-items-center">
+                                        <img src="images/right-arrow.png" alt="">
+                                        <a href="#">Appliances</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="lb-category-menu-item d-flex align-items-center">
+                                        <img src="images/right-arrow.png" alt="">
+                                        <a href="#">Judaica</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="lb-category-menu-item d-flex align-items-center">
+                                        <img src="images/right-arrow.png" alt="">
+                                        <a href="#">Luggage</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="lb-category-menu-item d-flex align-items-center">
+                                        <img src="images/right-arrow.png" alt="">
+                                        <a href="#">Experiences</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="lb-category-menu-item d-flex align-items-center">
+                                        <img src="images/right-arrow.png" alt="">
+                                        <a href="#">Collections</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="lb-category-menu-item d-flex align-items-center">
+                                        <img src="images/right-arrow.png" alt="">
+                                        <a href="#">Brands</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="lb-filter-set">
+                        <div class="bold-button-black-text curvy-text lb-cat-title d-flex justify-content-between">
+                            <span class="lb-cat-title-text">PRICE</span>
+                            <span><a href="#">Clear all</a></span>
+                        </div>
+                        <div class="lb-filter-list">
+                            <ul>
+                                <li>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck9">
+                                        <label class="custom-control-label filter-lable-text pl-2" for="customCheck9">$0-$25</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck10">
+                                        <label class="custom-control-label filter-lable-text pl-2" for="customCheck10">$25-$50</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck11">
+                                        <label class="custom-control-label filter-lable-text pl-2" for="customCheck11">$50-$100</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck12">
+                                        <label class="custom-control-label filter-lable-text pl-2" for="customCheck12">$100-$200</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck13">
+                                        <label class="custom-control-label filter-lable-text pl-2" for="customCheck13">$200-$300</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck14">
+                                        <label class="custom-control-label filter-lable-text pl-2" for="customCheck14">$300-$500</label>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="lb-filter-set">
+                        <div class="bold-button-black-text curvy-text lb-cat-title d-flex justify-content-between">
+                            <span class="lb-cat-title-text">COLOR</span>
+                            <span><a href="#">Clear all</a></span>
+                        </div>
+                        <div class="lb-filter-list lb-color-filtter">
+                            <ul>
+                                <li>
+                                    <div class="custom-control custom-checkbox color-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="colorCheck1">
+                                        <label class="custom-control-label filter-lable-text pl-2" style="--my-color-var: #cacaca;" for="colorCheck1"></label>
+                                    </div>                                    
+                                </li>  
+                                <li>
+                                    <div class="custom-control custom-checkbox color-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="colorCheck2">
+                                        <label class="custom-control-label filter-lable-text pl-2" style="--my-color-var: #e29e1c;" for="colorCheck2"></label>
+                                    </div>                                    
+                                </li>  
+                                <li>
+                                    <div class="custom-control custom-checkbox color-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="colorCheck3">
+                                        <label class="custom-control-label filter-lable-text pl-2" style="--my-color-var: #c30d0d;" for="colorCheck3"></label>
+                                    </div>                                    
+                                </li>
+                                <li>
+                                    <div class="custom-control custom-checkbox color-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="colorCheck4">
+                                        <label class="custom-control-label filter-lable-text pl-2" style="--my-color-var: #fa9e03;" for="colorCheck4"></label>
+                                    </div>                                    
+                                </li> 
+                                <li>
+                                    <div class="custom-control custom-checkbox color-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="colorCheck5">
+                                        <label class="custom-control-label filter-lable-text pl-2" style="--my-color-var: #000000;" for="colorCheck5"></label>
+                                    </div>                                    
+                                </li>
+                                <li>
+                                    <div class="custom-control custom-checkbox color-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="colorCheck6">
+                                        <label class="custom-control-label filter-lable-text pl-2" style="--my-color-var: #209244;" for="colorCheck6"></label>
+                                    </div>                                    
+                                </li> 
+                                <li>
+                                    <div class="custom-control custom-checkbox color-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="colorCheck7">
+                                        <label class="custom-control-label filter-lable-text pl-2" style="--my-color-var: #ffffff;" for="colorCheck7"></label>
+                                    </div>                                    
+                                </li> 
+                                <li>
+                                    <div class="custom-control custom-checkbox color-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="colorCheck8">
+                                        <label class="custom-control-label filter-lable-text pl-2" style="--my-color-var: #f5f333;" for="colorCheck8"></label>
+                                    </div>                                    
+                                </li> 
+                                <li>
+                                    <div class="custom-control custom-checkbox color-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="colorCheck9">
+                                        <label class="custom-control-label filter-lable-text pl-2" style="--my-color-var: #ffa2a2;" for="colorCheck9"></label>
+                                    </div>                                    
+                                </li> 
+                                <li>
+                                    <div class="custom-control custom-checkbox color-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="colorCheck10">
+                                        <label class="custom-control-label filter-lable-text pl-2" style="--my-color-var: #9d1dc3;" for="colorCheck10"></label>
+                                    </div>                                    
+                                </li>
+                                <li>
+                                    <div class="custom-control custom-checkbox color-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="colorCheck11">
+                                        <label class="custom-control-label filter-lable-text pl-2" style="--my-color-var: #f1efda;" for="colorCheck11"></label>
+                                    </div>                                    
+                                </li> 
+                                <li>
+                                    <div class="custom-control custom-checkbox color-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="colorCheck12">
+                                        <label class="custom-control-label filter-lable-text pl-2" style="--my-color-var: #836332;" for="colorCheck12"></label>
+                                    </div>                                    
+                                </li>                         
+                            </ul>                            
+                        </div>
+                    </div>
+                </div>
+                <div class="db-product-right-panel">
+                    <div class="d-flex justify-content-between flex-wrap">
+                        <div class="lb-registry-product-card">
+                            <div class="lb-product-image d-flex justify-content-center align-items-center">
+                                <a href="#"><img src="images/product-1.png" alt=""></a>
+                            </div>
+                            <div class="lb-product-desc text-center d-flex flex-column">
+                                <div class="product-name-info">
+                                    <span class="registry-text-Black">Painted Serving Plate</span>
+                                    <span class="product-card-input-text">EMANUEL</span>
+                                </div>
+                                <div class="product-card-price mt-4 mb-3">$20.00</div>
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <a href="#" class="mr-2"><img src="images/minus.png" alt=""></a>
+                                    <div class="lb-product-request">
+                                        <input type="text" class="lb-product-request-input" value="1">
+                                    </div>
+                                    <a href="#" class="ml-2"><img src="images/plus.png" alt=""></a>
+                                </div>
+                                <div class="mt-auto">                                    
+                                    <button type="button" class="btn btn-add-to-registry mt-3 mt-md-0" data-toggle="modal" data-target="#themeModal-gift">ADD TO REGISTRY</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lb-registry-product-card">
+                            <div class="lb-product-image d-flex justify-content-center align-items-center">
+                                <a href="#"><img src="images/product-2.png" alt=""></a>
+                            </div>
+                            <div class="lb-product-desc text-center d-flex flex-column">
+                                <div class="product-name-info">
+                                    <span class="registry-text-Black">Metal Kiddush Cup</span>
+                                    <span class="product-card-input-text">EMANUEL</span>
+                                </div>
+                                <div class="product-card-price mt-4 mb-3">$20.00</div>
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <a href="#" class="mr-2"><img src="images/minus.png" alt=""></a>
+                                    <div class="lb-product-request">
+                                        <input type="text" class="lb-product-request-input" value="1">
+                                    </div>
+                                    <a href="#" class="ml-2"><img src="images/plus.png" alt=""></a>
+                                </div>
+                                <div class="product-size-color-dp mt-2 pt-1 d-flex justify-content-center mb-2 mb-2">
+                                    <div class="lb-custom-select mr-1">
+                                        <select>
+                                            <option>Red</option>
+                                            <option>Black</option>
+                                            <option>white</option>
+                                        </select>
+                                    </div>
+                                    <div class="lb-custom-select mr-1">
+                                        <select>
+                                            <option>Size</option>
+                                            <option>Large</option>
+                                            <option>Small</option>
+                                        </select>
+                                    </div>
+                                </div>                                
+                                <div class="mt-auto">                                    
+                                    <div class="d-flex justify-content-center align-items-center">
+                                        <button type="button" class="btn btn-add-to-registry mt-3 mt-md-0" data-toggle="modal"
+                                        data-target="#themeModal-gift">ADD TO REGISTRY</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lb-registry-product-card">
+                            <div class="lb-product-image d-flex justify-content-center align-items-center">
+                                <a href="#"><img src="images/product-3.png" alt=""></a>
+                            </div>
+                            <div class="lb-product-desc text-center d-flex flex-column">
+                                <div class="product-name-info">
+                                    <span class="registry-text-Black">Wood & Silver Challah Board</span>
+                                    <span class="product-card-input-text">EMANUEL</span>
+                                </div>
+                                <div class="product-card-price mt-4 mb-3">$20.00</div>
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <a href="#" class="mr-2"><img src="images/minus.png" alt=""></a>
+                                    <div class="lb-product-request">
+                                        <input type="text" class="lb-product-request-input" value="1">
+                                    </div>
+                                    <a href="#" class="ml-2"><img src="images/plus.png" alt=""></a>
+                                </div>
+                                <div class="product-size-color-dp mt-2 pt-1 d-flex justify-content-center mb-2">
+                                    <div class="lb-custom-select mr-1">
+                                        <select>
+                                            <option>Red</option>
+                                            <option>Black</option>
+                                            <option>white</option>
+                                        </select>
+                                    </div>
+                                    <div class="lb-custom-select mr-1">
+                                        <select>
+                                            <option>Size</option>
+                                            <option>Large</option>
+                                            <option>Small</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="mt-auto">                                    
+                                    <button type="button" class="btn btn-add-to-registry mt-3 mt-md-0" data-toggle="modal"
+                                        data-target="#themeModal-gift">ADD TO REGISTRY</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lb-registry-product-card">
+                            <div class="lb-product-image d-flex justify-content-center align-items-center">
+                                <a href="#"><img src="images/product-4.png" alt=""></a>
+                            </div>
+                            <div class="lb-product-desc text-center d-flex flex-column">
+                                <div class="product-name-info">
+                                    <span class="registry-text-Black">Electric Stand Mixer With Bowl</span>
+                                    <span class="product-card-input-text">KMIX</span>
+                                </div>
+                                <div class="product-card-price mt-4 mb-3">$40.00</div>
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <a href="#" class="mr-2"><img src="images/minus.png" alt=""></a>
+                                    <div class="lb-product-request">
+                                        <input type="text" class="lb-product-request-input" value="1">
+                                    </div>
+                                    <a href="#" class="ml-2"><img src="images/plus.png" alt=""></a>
+                                </div>
+                                <div class="mt-auto">                                    
+                                    <button type="button" class="btn btn-add-to-registry mt-3 mt-md-0" data-toggle="modal"
+                                        data-target="#themeModal-gift">ADD TO REGISTRY</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lb-registry-product-card">
+                                <div class="lb-product-image d-flex justify-content-center align-items-center">
+                                    <a href="#"><img src="images/product-1.png" alt=""></a>
+                                </div>
+                                <div class="lb-product-desc text-center d-flex flex-column">
+                                    <div class="product-name-info">
+                                        <span class="registry-text-Black">Painted Serving Plate</span>
+                                        <span class="product-card-input-text">EMANUEL</span>
+                                    </div>
+                                    <div class="product-card-price mt-4 mb-3">$20.00</div>
+                                    <div class="d-flex justify-content-center align-items-center">
+                                        <a href="#" class="mr-2"><img src="images/minus.png" alt=""></a>
+                                        <div class="lb-product-request">
+                                            <input type="text" class="lb-product-request-input" value="1">
+                                        </div>
+                                        <a href="#" class="ml-2"><img src="images/plus.png" alt=""></a>
+                                    </div>
+                                    <div class="mt-auto">                                    
+                                        <div class="d-flex justify-content-center align-items-center">
+                                            <button type="button" class="btn btn-add-to-registry mt-3 mt-md-0" data-toggle="modal"
+                                        data-target="#themeModal-gift">ADD TO REGISTRY</button>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                        <div class="lb-registry-product-card">
+                            <div class="lb-product-image d-flex justify-content-center align-items-center">
+                                <a href="#"><img src="images/product-2.png" alt=""></a>
+                            </div>
+                            <div class="lb-product-desc text-center d-flex flex-column">
+                                <div class="product-name-info">
+                                    <span class="registry-text-Black">Metal Kiddush Cup</span>
+                                    <span class="product-card-input-text">EMANUEL</span>
+                                </div>
+                                <div class="product-card-price mt-4 mb-3">$20.00</div>
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <a href="#" class="mr-2"><img src="images/minus.png" alt=""></a>
+                                    <div class="lb-product-request">
+                                        <input type="text" class="lb-product-request-input" value="1">
+                                    </div>
+                                    <a href="#" class="ml-2"><img src="images/plus.png" alt=""></a>
+                                </div>
+                                <div class="product-size-color-dp mt-2 pt-1 d-flex justify-content-center mb-2 mb-2">
+                                    <div class="lb-custom-select mr-1">
+                                        <select>
+                                            <option>Red</option>
+                                            <option>Black</option>
+                                            <option>white</option>
+                                        </select>
+                                    </div>
+                                    <div class="lb-custom-select mr-1">
+                                        <select>
+                                            <option>Size</option>
+                                            <option>Large</option>
+                                            <option>Small</option>
+                                        </select>
+                                    </div>
+                                </div>                                
+                                <div class="mt-auto">                                    
+                                    <div class="d-flex justify-content-center align-items-center">
+                                        <button type="button" class="btn btn-add-to-registry mt-3 mt-md-0" data-toggle="modal"
+                                        data-target="#themeModal-gift">ADD TO REGISTRY</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lb-registry-product-card">
+                            <div class="lb-product-image d-flex justify-content-center align-items-center">
+                                <a href="#"><img src="images/product-3.png" alt=""></a>
+                            </div>
+                            <div class="lb-product-desc text-center d-flex flex-column">
+                                <div class="product-name-info">
+                                    <span class="registry-text-Black">Wood & Silver Challah Board</span>
+                                    <span class="product-card-input-text">EMANUEL</span>
+                                </div>
+                                <div class="product-card-price mt-4 mb-3">$20.00</div>
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <a href="#" class="mr-2"><img src="images/minus.png" alt=""></a>
+                                    <div class="lb-product-request">
+                                        <input type="text" class="lb-product-request-input" value="1">
+                                    </div>
+                                    <a href="#" class="ml-2"><img src="images/plus.png" alt=""></a>
+                                </div>
+                                <div class="product-size-color-dp mt-2 pt-1 d-flex justify-content-center mb-2">
+                                    <div class="lb-custom-select mr-1">
+                                        <select>
+                                            <option>Red</option>
+                                            <option>Black</option>
+                                            <option>white</option>
+                                        </select>
+                                    </div>
+                                    <div class="lb-custom-select mr-1">
+                                        <select>
+                                            <option>Size</option>
+                                            <option>Large</option>
+                                            <option>Small</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="mt-auto">                                    
+                                    <div class="d-flex justify-content-center align-items-center">
+                                        <button type="button" class="btn btn-add-to-registry mt-3 mt-md-0" data-toggle="modal"
+                                        data-target="#themeModal-gift">ADD TO REGISTRY</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lb-registry-product-card">
+                            <div class="lb-product-image d-flex justify-content-center align-items-center">
+                                <a href="#"><img src="images/product-4.png" alt=""></a>
+                            </div>
+                            <div class="lb-product-desc text-center d-flex flex-column">
+                                <div class="product-name-info">
+                                    <span class="registry-text-Black">Electric Stand Mixer With Bowl</span>
+                                    <span class="product-card-input-text">KMIX</span>
+                                </div>
+                                <div class="product-card-price mt-4 mb-3">$40.00</div>
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <a href="#" class="mr-2"><img src="images/minus.png" alt=""></a>
+                                    <div class="lb-product-request">
+                                        <input type="text" class="lb-product-request-input" value="1">
+                                    </div>
+                                    <a href="#" class="ml-2"><img src="images/plus.png" alt=""></a>
+                                </div>
+                                <div class="mt-auto">                                    
+                                    <div class="d-flex justify-content-center align-items-center">
+                                        <button type="button" class="btn btn-add-to-registry mt-3 mt-md-0" data-toggle="modal"
+                                        data-target="#themeModal-gift">ADD TO REGISTRY</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lb-registry-product-card">
+                                <div class="lb-product-image d-flex justify-content-center align-items-center">
+                                    <a href="#"><img src="images/product-1.png" alt=""></a>
+                                </div>
+                                <div class="lb-product-desc text-center d-flex flex-column">
+                                    <div class="product-name-info">
+                                        <span class="registry-text-Black">Painted Serving Plate</span>
+                                        <span class="product-card-input-text">EMANUEL</span>
+                                    </div>
+                                    <div class="product-card-price mt-4 mb-3">$20.00</div>
+                                    <div class="d-flex justify-content-center align-items-center">
+                                        <a href="#" class="mr-2"><img src="images/minus.png" alt=""></a>
+                                        <div class="lb-product-request">
+                                            <input type="text" class="lb-product-request-input" value="1">
+                                        </div>
+                                        <a href="#" class="ml-2"><img src="images/plus.png" alt=""></a>
+                                    </div>
+                                    <div class="mt-auto">                                    
+                                        <div class="d-flex justify-content-center align-items-center">
+                                            <button type="button" class="btn btn-add-to-registry mt-3 mt-md-0" data-toggle="modal"
+                                        data-target="#themeModal-gift">ADD TO REGISTRY</button>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                        <div class="lb-registry-product-card">
+                            <div class="lb-product-image d-flex justify-content-center align-items-center">
+                                <a href="#"><img src="images/product-2.png" alt=""></a>
+                            </div>
+                            <div class="lb-product-desc text-center d-flex flex-column">
+                                <div class="product-name-info">
+                                    <span class="registry-text-Black">Metal Kiddush Cup</span>
+                                    <span class="product-card-input-text">EMANUEL</span>
+                                </div>
+                                <div class="product-card-price mt-4 mb-3">$20.00</div>
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <a href="#" class="mr-2"><img src="images/minus.png" alt=""></a>
+                                    <div class="lb-product-request">
+                                        <input type="text" class="lb-product-request-input" value="1">
+                                    </div>
+                                    <a href="#" class="ml-2"><img src="images/plus.png" alt=""></a>
+                                </div>
+                                <div class="product-size-color-dp mt-2 pt-1 d-flex justify-content-center mb-2 mb-2">
+                                    <div class="lb-custom-select mr-1">
+                                        <select>
+                                            <option>Red</option>
+                                            <option>Black</option>
+                                            <option>white</option>
+                                        </select>
+                                    </div>
+                                    <div class="lb-custom-select mr-1">
+                                        <select>
+                                            <option>Size</option>
+                                            <option>Large</option>
+                                            <option>Small</option>
+                                        </select>
+                                    </div>
+                                </div>                                
+                                <div class="mt-auto">                                    
+                                    <div class="d-flex justify-content-center align-items-center">
+                                        <button type="button" class="btn btn-add-to-registry mt-3 mt-md-0" data-toggle="modal"
+                                        data-target="#themeModal-gift">ADD TO REGISTRY</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lb-registry-product-card">
+                            <div class="lb-product-image d-flex justify-content-center align-items-center">
+                                <a href="#"><img src="images/product-3.png" alt=""></a>
+                            </div>
+                            <div class="lb-product-desc text-center d-flex flex-column">
+                                <div class="product-name-info">
+                                    <span class="registry-text-Black">Wood & Silver Challah Board</span>
+                                    <span class="product-card-input-text">EMANUEL</span>
+                                </div>
+                                <div class="product-card-price mt-4 mb-3">$20.00</div>
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <a href="#" class="mr-2"><img src="images/minus.png" alt=""></a>
+                                    <div class="lb-product-request">
+                                        <input type="text" class="lb-product-request-input" value="1">
+                                    </div>
+                                    <a href="#" class="ml-2"><img src="images/plus.png" alt=""></a>
+                                </div>
+                                <div class="product-size-color-dp mt-2 pt-1 d-flex justify-content-center mb-2">
+                                    <div class="lb-custom-select mr-1">
+                                        <select>
+                                            <option>Red</option>
+                                            <option>Black</option>
+                                            <option>white</option>
+                                        </select>
+                                    </div>
+                                    <div class="lb-custom-select mr-1">
+                                        <select>
+                                            <option>Size</option>
+                                            <option>Large</option>
+                                            <option>Small</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="mt-auto">                                    
+                                    <div class="d-flex justify-content-center align-items-center">
+                                        <button type="button" class="btn btn-add-to-registry mt-3 mt-md-0" data-toggle="modal"
+                                        data-target="#themeModal-gift">ADD TO REGISTRY</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lb-registry-product-card">
+                            <div class="lb-product-image d-flex justify-content-center align-items-center">
+                                <a href="#"><img src="images/product-4.png" alt=""></a>
+                            </div>
+                            <div class="lb-product-desc text-center d-flex flex-column">
+                                <div class="product-name-info">
+                                    <span class="registry-text-Black">Electric Stand Mixer With Bowl</span>
+                                    <span class="product-card-input-text">KMIX</span>
+                                </div>
+                                <div class="product-card-price mt-4 mb-3">$40.00</div>
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <a href="#" class="mr-2"><img src="images/minus.png" alt=""></a>
+                                    <div class="lb-product-request">
+                                        <input type="text" class="lb-product-request-input" value="1">
+                                    </div>
+                                    <a href="#" class="ml-2"><img src="images/plus.png" alt=""></a>
+                                </div>
+                                <div class="mt-auto">                                    
+                                    <div class="d-flex justify-content-center align-items-center">
+                                        <button type="button" class="btn btn-add-to-registry mt-3 mt-md-0" data-toggle="modal"
+                                        data-target="#themeModal-gift">ADD TO REGISTRY</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- store product section end -->
+    <!-- Footer start -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-5 mt-5 mt-lg-0">
+                    <div class="lb-footer-logo mb-4">
+                        <img src="images/footer-logo.png" alt="" title="">
+                    </div>
+                    <div class="lb-social-links d-flex justify-content-start align-items-center mt-5 flex-wrap flex-xl-nowrap">
+                        <a href="#" class="mt-2"><img src="images/fb-icon.jpg" alt=""></a>
+                        <a href="#" class="mt-2"><img src="images/twitter-icon.jpg" alt=""></a>
+                        <a href="#" class="mt-2"><img src="images/pinterest-icon.jpg" alt=""></a>
+                        <a href="#" class="mt-2"><img src="images/instagram-icon.jpg" alt=""></a>
+                        <a href="#" class="mt-2">@LABAYIT #MAGICALMOMENTS</a>
+                    </div>
+                    <div class="lb-copywrite white-body-text mt-4">
+                        © La’Bayit, 2018. All Rights Reserved.
+                    </div>
+                </div>
+                <div class="col-12 col-lg-7 order-first order-lg-2">
+                    <div class="d-flex lb-footer-links justify-content-between flex-column flex-md-row">
+                        <div class="mt-3 mt-md-0">
+                            <span class="bold-button-white-text">ABOUT</span>
+                            <ul>
+                                <li><a href="#">Our Story</a></li>
+                                <li><a href="#">FAQ</a></li>
+                                <li><a href="#">Become a Vendor</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a href="#">Terms of Use</a></li>
+                            </ul>
+                        </div>
+                        <div class="mt-3 mt-md-0">
+                            <span class="bold-button-white-text">ACCOUNT</span>
+                            <ul>
+                                <li><a href="#">Log In</a></li>
+                                <li><a href="#">Manage Registry</a></li>
+                                <li><a href="#">Orders</a></li>
+                                <li><a href="#">Account Settings</a></li>
+                            </ul>
+                        </div>
+                        <div class="mt-3 mt-md-0">
+                            <span class="bold-button-white-text">REGISTRY</span>
+                            <ul>
+                                <li><a href="#">Create Registry</a></li>
+                                <li><a href="#">Manage Registry</a></li>
+                                <li><a href="#">Find Registry</a></li>
+                            </ul>
+                        </div>
+                        <div class="mt-3 mt-md-0">
+                            <span class="bold-button-white-text">STORE</span>
+                            <ul>
+                                <li><a href="#">New Arrivals</a></li>
+                                <li><a href="#">Brands</a></li>
+                            </ul>
+                        </div>
+                        <div class="mt-3 mt-md-0">
+                            <span class="bold-button-white-text">CONTACT</span>
+                            <ul>
+                                <li><a href="mailto:support@labayitgifts.com">support@labayitgifts.com</a></li>
+                                <li><a href="#">+972-58-627-4087</a></li>
+                            </ul>
+                            <a href="#" class="d-block mt-3"><img src="images/message-us-btn.jpg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer end -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="themeModal-gift" tabindex="-1" role="dialog" aria-labelledby="themeModal-gift-Label"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="d-flex align-items-center flex-column w-100">
+                        <div class="lb-sign-up-logo mt-4 pt-3">
+                            <img src="images/logo.png" alt="">
+                        </div>
+                        <h4 class="curvy mt-4 text-center">Who is this gift for?</h4>
+                    </div>
+                    <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button> -->
+                    <a href="#" data-dismiss="modal" class="lb-cross-btn">
+                        <img src="images/gray-cross.png" alt="">
+                    </a>
+                </div>
+                <div class="modal-body">
+                    <button class="btn btn-signup-thirdparty mt-3 mb-4">CHOOSE A COUPLE</button>
+                    <button type="button" class="btn btn-signup mt-3" data-toggle="modal"
+                    data-target="#themeModal-store-login">LOG IN</button> 
+                    <div class="lb-login-terms text-center mt-4">
+                        <span class="bold-button-black-text">Not a memeber yet? <a href="#">SIGN UP</a> </span>
+                    </div>                       
+                </div>
+            </div>
+        </div>
+    </div>   
+    <!-- Modal -->
+     <!-- Modal -->
+    <div class="modal fade bd-example-modal-lg" id="themeModal-store-login" tabindex="-1" role="dialog" aria-labelledby="themeModal-store-loginLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+        <div class="modal-header">
+            <div class="d-flex align-items-center flex-column w-100">
+            <div class="lb-sign-up-logo mt-4 pt-3">
+                <img src="images/logo.png" alt="">
+            </div>
+            <h4 class="curvy mt-3 text-center">Thanks for joining us!</h4>
+            </div>
+            <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+            </button> -->
+            <a href="#" data-dismiss="modal" class="lb-cross-btn">
+            <img src="images/gray-cross.png" alt="">
+            </a>
+        </div>
+        <div class="modal-body">
+            <div class="lb-form-layout">
+            <form>
+                <div class="form-group">
+                <label class="lb-required" for="">EMAIL
+                    <span class="from-star-color">*</span>
+                </label>
+                <input type="text" class="form-control lb-custom-input-border" required placeholder="Email">
+                </div>
+                <div class="form-group mb-0">
+                <label class="lb-required" for="">PASSWORD
+                    <span class="from-star-color">*</span>
+                </label>
+                <input type="password" class="form-control lb-custom-input-border" required placeholder="Password (7 characters or more)">
+                </div>
+                <div class="d-flex justify-content-end">
+                <a href="#" class="lb-forgot-password">Forgot Password?</a>
+                </div>
+                <div class="form-group pt-10 pb-40 mt-4">
+                <button type="button" class="btn btn-signup" type="submit">SIGN UP </button>
+                <button class="btn btn-signup-thirdparty mt-3">LOG IN WITH FACEBOOK</button>
+                </div>
+            </form>
+            <div class="lb-login-terms text-center">
+                <span class="bold-button-black-text d-block mt-5">Not a member yet? <a href="#">SIGN UP</a> </span>
+            </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    </div>
+    <!-- Modal -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/custom.js"></script>
+</body>
+
+</html>

@@ -4,7 +4,7 @@ $(".navbar-toggler").click(function () {
   }, 400);
   $(".sub-header").css('z-index', '50');
 });
-$(".lb-cross-btn").click(function () {
+$(".static-nav-header .lb-cross-btn").click(function () {
   $(".mob-menu-bg").animate({
     top: "-100%"
   }, 400);
@@ -44,6 +44,7 @@ months[9] = "October";
 months[10] = "November";
 months[11] = "December";
 $(function () {
+  if($(".lb-db-custom-date-edit").length !=0){
   $(".lb-db-custom-date-edit").datepicker({
     onSelect: function () {
       var lbNewDateObj = $(this).datepicker('getDate');
@@ -53,6 +54,7 @@ $(function () {
       $(".profile-date-box h3").text(months[selectedMonth] + " " + selectedDate + "," + " " + selectedYear);
     }
   });
+}
 });
 $(".edit-profile-date").click(function () {
   $(".profile-date-box h3").toggleClass("d-none");
@@ -117,6 +119,13 @@ $(window).on('load', function () {
   $('#themeModal-small').modal('show');
 });
 
+$(window).on('load', function () {
+  $('#themeModal-choose-couple').modal('show');
+});
+$(window).on('load', function () {
+  $('#themeModal-search-couple').modal('show');
+});
+
 // function for main menu dp on mobile
 
 $(window).on('resize', function () {
@@ -176,4 +185,13 @@ $(".lb-product-card-menu-container").click(function(e){
 });
 $(document).click(function(){
   $(".lb-product-card-menu-container").hide();
+});
+
+
+// window.onerror = function(){
+//   return true;
+// };
+
+$("#searchCouple").click(function(){
+  $('.lb-couple-serach-result').show();
 });

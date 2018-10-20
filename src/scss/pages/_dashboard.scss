@@ -109,6 +109,9 @@
     position: absolute !important;
     left: 50% !important;
     transform: translateX(-60%);
+    @media (max-width: 500px) {
+        transform: translateX(-56%);
+    }
 }
 .ui-widget {
     font-family: 'Noto Sans', sans-serif;
@@ -205,4 +208,16 @@
 .lb-cat-title {
     padding-top: 20px;
     padding-bottom: 15px;
+    .lb-cat-title-text {
+        width: calc(100% - 70px);
+    }
+    span{
+        width: 68px;
+        padding-left: 5px;
+        a{
+            font-size: 16px;
+            color: #96d5d2;
+            font-weight: normal;
+        }
+    }
 }

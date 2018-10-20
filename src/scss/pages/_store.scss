@@ -1,0 +1,97 @@
+.store-nav {
+    @media (min-width: 992px) {
+        padding: 0px;
+    }    
+}
+.lb-store-nav {
+    position: relative;
+}
+.lb-accounts-dropdown {
+    display: none;
+    position: absolute;
+    list-style: none;
+    padding: 20px 0px;
+    margin: 0px;
+    background: $white-text;
+    width: 240px;
+    border: solid 1px $hr-border;
+    top: 87px;
+    li{
+        margin-bottom: 13px;
+        a{
+            font-size: 18px;
+            color: $charcoal-grey;
+            padding: 5px 20px;
+            display: block;
+            &:hover{
+                background: $theme-green-button;
+                text-decoration: none;
+            }            
+        }
+    }
+}
+.lb-account-menu{
+    & > a{
+        padding: 31px 0px;
+        display: block;
+    }
+    &:hover{
+        .lb-accounts-dropdown{
+            display: block;
+        }
+    }
+}
+.lb-store-banner{
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    width: auto;
+    margin-top: 175px;
+    @media (min-width: 768px){
+        height: 625px;   
+        width: 100%;
+        margin-top: 125px;    
+    }
+    @media (min-width: 992px){
+        height: 625px;   
+        width: 100%;
+        margin-top: 175px;    
+    }
+    
+    .lb-store-title{
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 70px;
+        @media (max-width: 767px){
+            width: 90%;
+            margin-top: 50px;    
+        }
+        @media (min-width: 768px){
+            width: 90%;
+            margin-top: 20px;    
+        }
+        @media (min-width: 1025px){
+            width: auto;
+            margin-top: 20px;    
+        }
+        h2{
+            @media (max-width: 767px){
+               font-size: 35px; 
+            }
+        }
+    }
+    margin-bottom: 50px;
+}
+.lb-couple-serach-result {
+    .btn-give-gift {
+        @media (max-width: 991px){
+            width: 100%;
+        }
+    }
+}
+.lb-couple-serach-result {
+    display: none;
+}

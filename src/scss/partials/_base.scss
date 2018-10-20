@@ -32,6 +32,12 @@ body{
 .small-body-text { 
     font-size: 16px;
 }
+a{
+    &:hover{
+        color: $purple-brown;
+        text-decoration: none;
+    }
+}
 h1{
     font-family: 'andadabold';
     font-size: 72px;
