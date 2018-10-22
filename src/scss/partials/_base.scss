@@ -80,6 +80,23 @@ h4.curvy{
     line-height: 45px;
     color: $curvy-text;
 }
+h5{
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 24px;
+    color: $charcoal-grey;
+    font-weight: bold;
+}
+h5.bold{
+    font-family: 'andadabold';
+    font-size: 24px;
+    color: $charcoal-grey;
+    font-weight: bold;
+}
+.contribute-gray-text {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 24px;
+    color: $placeholder-color;
+}
 .bold-button-black-text {
     font-family: 'Noto Sans', sans-serif;
     font-weight: bold;
@@ -168,4 +185,15 @@ a{
     @media (min-width: 768px){
         width: 25%;
     }
+}
+.justify-content-product-xl-start {
+    @media (min-width: 1300px){
+        justify-content: flex-start !important;
+    }
+}
+.flex-grow {
+    flex: 1 0 auto;
+}
+.h-71{
+    height: calc(100% - 150px);
 }
