@@ -29,7 +29,7 @@
 
         .nav-right {
             width: 100%;
-
+            position: relative;
             @media (min-width: 768px) {
                 width: 60%;
             }
@@ -199,6 +199,14 @@ box-shadow: 0px 0px 6px 2px rgba(0,0,0,0.2);
         height: 25px;
         display: block;
     }
+    .lb-email-search-cross-btn {
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        width: 25px;
+        height: 25px;
+        display: block;
+    }
 
     .theme-green-button {
         padding: 6px 33px;
@@ -291,6 +299,23 @@ box-shadow: 0px 0px 6px 2px rgba(0,0,0,0.2);
     }
 }
 
+.btn-copy-link {
+    @include border-radius(2px);
+    background: $dark-mauve;
+    border: none;
+    outline: none;
+    height: 48px;
+    width: 75px;
+    text-align: center;
+    color: $white-text;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+
+    &:hover {
+        background: $purple-brown;
+    }
+}
 .btn-signup-thirdparty {
     @include border-radius(26px);
     background: $theme-green-button;
@@ -321,6 +346,25 @@ box-shadow: 0px 0px 6px 2px rgba(0,0,0,0.2);
     text-transform: uppercase;
     font-weight: bold;
 
+    &:hover {
+        background: $purple-brown;
+    }
+}
+.btn-schedule-delivary {
+    @include border-radius(26px);
+    background: $dark-mauve;
+    border: none;
+    outline: none;
+    height: 48px;
+    width: 300px;
+    text-align: center;
+    color: $white-text;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+    @media (min-width: 992px) {
+        width: 328px;
+    }
     &:hover {
         background: $purple-brown;
     }
@@ -383,6 +427,16 @@ box-shadow: 0px 0px 6px 2px rgba(0,0,0,0.2);
     padding: 11px 47px;
     text-align: center;
     width: 290px;
+    &:hover {
+        background: $theme-green-button-hover;
+    }
+}
+.btn-shop {
+    @include border-radius(26px);
+    background: $theme-green-button;
+    padding: 8px 0px;
+    text-align: center;
+    width: 114px;
     &:hover {
         background: $theme-green-button-hover;
     }
@@ -507,6 +561,30 @@ box-shadow: 0px 0px 6px 2px rgba(0,0,0,0.2);
     outline: none;
     padding: 0px 12px;
     border: 1px solid $curvy-text; 
+}
+.lb-custom-input-border-profile{
+    height: 50px;
+    @include border-radius(2px);
+    @include placeholder-color($placeholder-color);
+    border: none;
+    outline: none;
+    padding: 0px 18px;
+    line-height: 48px;  
+    width: 100%;  
+    @media (min-width: 992px) {
+        width: 240px;
+    }
+    border: 1px solid $curvy-text;
+}
+.lb-big-input-box-470 {
+    width: 100%;
+    @media (min-width: 1200px) {
+        width: 470px;
+    }
+    
+}
+.lb-small-input-box-140 {
+    width: 140px;
 }
 .from-star-color {
     color: $from-star-color;
@@ -955,10 +1033,10 @@ footer {
                 font-size: 14px;
                 &:hover{
                     text-decoration: none;
-                    color: $theme-green-button-hover;
+                    color: $theme-green-button;
                     @media (max-width: 991px) {
                         color: $white-text;
-                        background: $theme-green-button-hover;
+                        background: $theme-green-button;
                     }
                 }
                 @media (max-width: 991px) {
@@ -974,6 +1052,16 @@ footer {
                 }
                 @media (min-width: 13600px) {
                     font-size: 18px;
+                }
+            }
+            &.active{
+                a{
+                    text-decoration: none;
+                    color: $theme-green-button;
+                    @media (max-width: 991px) {
+                        color: $white-text;
+                        background: $theme-green-button;
+                    }
                 }
             }
         }
@@ -1090,6 +1178,7 @@ box-shadow: 0px 20px 30px -15px rgba(0,0,0,0.35);
     font-size: 12px;
     color: #212121;
 }
+
 .color-checkbox {
     .custom-control-label{
         position: absolute;
@@ -1105,6 +1194,15 @@ box-shadow: 0px 20px 30px -15px rgba(0,0,0,0.35);
     top: 0;
 }
 
+.custom-checkbox.user-profile-checkbox .custom-control-label::before {
+    @include border-radius(0px);
+    background-color: $bluegrey;    
+    border: none;
+    width: 29px !important;
+    height: 29px !important;
+    top: 0;
+}
+
 /* Checkbox */
 
 .custom-checkbox .custom-control-input:checked ~ .custom-control-label::before{   
@@ -1117,6 +1215,11 @@ box-shadow: 0px 20px 30px -15px rgba(0,0,0,0.35);
     width: 24px !important;
     height: 24px !important;
 }
+.custom-checkbox.user-profile-checkbox .custom-control-label::after {
+    width: 29px !important;
+    height: 29px !important;
+    zoom: normal !important;
+}
 .custom-checkbox .custom-control-input:checked ~ .custom-control-label::after{
     background-image: url("../images/tick.png");
     background-repeat: no-repeat;
@@ -1126,6 +1229,22 @@ box-shadow: 0px 20px 30px -15px rgba(0,0,0,0.35);
     zoom: 1.5;
     top: -1px;
     left: -20px;
+}
+.custom-checkbox.user-profile-checkbox .custom-control-input:checked ~ .custom-control-label::after{
+    background-image: url("../images/tick-white.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: $bluegrey;
+    width: 18px;
+    height: 17px;
+    zoom: 1.5;
+    top: 0px;
+    left: -24px;
+}
+.user-profile-checkbox{
+    .custom-control-input:focus ~ .custom-control-label::before {
+        box-shadow: none;
+    }
 }
 .color-checkbox{
     .custom-control-input:focus ~ .custom-control-label::before {
@@ -1435,4 +1554,260 @@ box-shadow: 0px 20px 30px -15px rgba(0,0,0,0.35);
     @media (min-width: 992px){
         width: calc(100% - 420px);
     }
+}
+.lb-user-profile-menu{
+    ul{
+        padding: 0px;
+        margin: 0px;
+        list-style: none;
+        li{
+            display: inline-block;
+            padding: 0px 15px 0 0;
+            list-style: none;
+            @media (min-width: 768px){
+                padding: 0px;
+                margin: 26px 0 0 0;
+            }
+            a{
+                &:hover{
+                    color: $theme-green-button;
+                }
+            }
+        }
+    }
+}
+.datepicker-container {
+    position: relative;
+    #ui-datepicker-div {
+        top: 105px !important;
+        left: 0px !important;        
+        width: 300px;
+        padding: 30px 10px;
+        transform: none;
+        @media (min-width: 768px){
+            width: 368px;            
+            left: 0px !important;
+            padding: 30px 55px;
+        }
+    }
+}
+.lb-user-register-link-input {
+    @media (min-width: 768px){
+        width: 415px;
+    }
+}
+.lb-email-account-search{
+    margin: 21px 0px 20px;
+    display: none;
+    left: 0px;
+    top: 2px;
+    @media (min-width: 768px){
+        width: 346px;
+    }
+    > div {
+    background: #fff;
+    }
+    .form-control{
+        padding-right: 40px;
+        padding-left: 5px;
+        &:focus {
+            z-index: 0;
+        }
+    }
+}
+
+.lb-user-order-prodtct-box {
+    padding: 5px;
+    @media (min-width: 768px){
+        width: 40%;
+        font-size: 16px;
+    }
+}
+.lb-user-order-quantity-box {
+    padding: 5px;
+    @media (min-width: 768px){
+        width: 15%;
+        text-align: center;
+        font-size: 16px;
+    }
+}
+.lb-user-order-registry-box{
+    padding: 5px;
+    @media (min-width: 768px){
+        width: 15%;
+        text-align: center;
+        font-size: 16px;
+    }
+}
+.lb-user-order-purchase-date-box {
+    padding: 5px;
+    @media (min-width: 768px){
+        width: 15%;
+        text-align: center;
+        font-size: 16px;
+    }
+}
+.lb-user-order-subtotal-box {
+    padding: 5px;
+    @media (min-width: 768px){
+        width: 15%;
+        text-align: center;
+        font-size: 16px;
+    }
+}
+.lb-user-order-history {
+    
+    .lb-user-order-prodtct-box {
+        padding: 5px;
+        @media (min-width: 768px){
+            width: 40%;
+            font-size: 16px;
+            text-align: center;
+            font-weight: bold;
+        }
+        @media (min-width: 992px){
+            width: 30%;
+            font-size: 16px;
+            text-align: center;
+            font-weight: bold;
+        }
+    }
+    .lb-user-order-quantity-box {
+        padding: 5px;
+        @media (min-width: 768px){
+            width: 15%;
+            text-align: center;
+            font-size: 16px;
+        }
+        @media (min-width: 992px){
+            width: 17.5%;
+            text-align: center;
+            font-size: 16px;
+        }
+    }
+    .lb-user-order-registry-box{
+        padding: 5px;
+        @media (min-width: 768px){
+            width: 15%;
+            text-align: center;
+            font-size: 16px;
+        }
+        @media (min-width: 992px){
+            width: 17.5%;
+            text-align: center;
+            font-size: 16px;
+        }
+    }
+    .lb-user-order-purchase-date-box {
+        padding: 5px;
+        @media (min-width: 768px){
+            width: 15%;
+            text-align: center;
+            font-size: 16px;
+        }
+        @media (min-width: 992px){
+            width: 17.5%;
+            text-align: center;
+            font-size: 16px;
+        }
+    }
+    .lb-user-order-subtotal-box {
+        padding: 5px;
+        @media (min-width: 768px){
+            width: 15%;
+            text-align: center;
+            font-size: 16px;
+        }
+        @media (min-width: 992px){
+            width: 17.5%;
+            text-align: center;
+            font-size: 16px;
+        }
+    }
+}
+.lb-br-top{
+    @media (min-width: 768px){
+        border-top: 1px solid $hr-border;
+    }
+}
+.lb-br-bottom{
+    @media (max-width: 767px){
+        border-bottom: 1px solid $hr-border;
+    }
+}
+.lb-user-ordered-product-image {
+    
+        width: 154px;
+    
+    a{
+        img{
+            max-width: 100%;
+        }
+    }
+}
+.lb-user-ordered-product-name {
+    width: calc(100% - 154px);
+}
+
+.lb-delivery-coordinator {
+    padding: 80px 15px;
+    background: $white-text;
+    position: relative;
+
+    &:before {
+        content: "";
+        position: absolute;
+        top: 50px;
+        left: -370px;
+        z-index: 5;
+        width: 585px;
+        height: 569px;
+        background: url(../images/gr-gifts-only-box.png) top left no-repeat;
+        display: none;
+
+        @media (min-width: 992px) {
+            left: -380px;
+            display: block;
+        }
+
+        @media (min-width: 1200px) {
+            left: -280px;
+        }
+
+        @media (min-width: 1350px) {
+            left: -150px;
+        }
+
+        @media (min-width: 1900px) {
+            left: 20%;
+            transform: translateX(-50%);
+        }
+
+        @media (min-width: 2500px) {
+            left: 26%;
+            transform: translateX(-50%);
+        }
+
+        @media (min-width: 3500px) {
+            left: 40%;
+            transform: translateX(-50%);
+        }
+    }
+}
+.lb-purchased-gift-banner {
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    width: auto;
+    margin-top: 194px;
+    @media (min-width: 768px) {
+        height: 334px;
+        margin-top: 126px;
+    }
+    @media (min-width: 992px) {
+        height: 334px;
+    }
+    
 }

@@ -33,10 +33,14 @@ body{
     font-size: 16px;
 }
 a{
+    color: $theme-green-button;
     &:hover{
         color: $purple-brown;
         text-decoration: none;
     }
+}
+hr{
+    border-top: 1px solid $hr-border;
 }
 h1{
     font-family: 'andadabold';
@@ -80,6 +84,12 @@ h4.curvy{
     font-family: 'Noto Sans', sans-serif;
     font-weight: bold;
     font-size: 18px;
+    color: $charcoal-grey;
+}
+.black-text-normal {
+    font-family: 'Noto Sans', sans-serif;    
+    font-size: 18px !important;
+    font-weight: normal !important;
     color: $charcoal-grey;
 }
 
@@ -150,4 +160,12 @@ a{
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+}
+
+/* Grid */
+
+.w-md-25 {
+    @media (min-width: 768px){
+        width: 25%;
+    }
 }

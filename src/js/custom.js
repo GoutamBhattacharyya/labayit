@@ -56,6 +56,15 @@ $(function () {
   });
 }
 });
+$(function () {
+  if($(".lb-wedding-date").length !=0){
+    $(".lb-wedding-date").datepicker({
+      beforeShow:function(textbox, instance){
+        $('.datepicker-container').append($('#ui-datepicker-div'));
+    }
+  });
+}
+});
 $(".edit-profile-date").click(function () {
   $(".profile-date-box h3").toggleClass("d-none");
   $(".profile-date-box input").toggleClass("d-none");
@@ -194,4 +203,19 @@ $(document).click(function(){
 
 $("#searchCouple").click(function(){
   $('.lb-couple-serach-result').show();
+});
+
+$(".ib-email-search-button").on("click",function(e){
+  e.preventDefault();
+  $(".lb-email-account-search").show();
+  $(".ib-email-search-button").hide();
+  $(".lb-account-menu").hide();
+  $(".lb-price-dp").hide();
+});
+$(".lb-email-search-cross-btn").on("click",function(e){
+  e.preventDefault();
+  $(".lb-email-account-search").hide();
+  $(".ib-email-search-button").show();
+  $(".lb-account-menu").show();
+  $(".lb-price-dp").show();
 });
