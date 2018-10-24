@@ -1,0 +1,140 @@
+.lb-paymentsection{    
+    @media (min-width: 992px){
+        margin-top: 90px;
+    }
+}
+.lb-payment-section-right{
+    transition: all 0.5s ease;
+    background: $purple-brown;
+    position: fixed;
+    height: 100%;
+    right: -100%;
+    top: 0px;
+    z-index: 101;    
+    width: 100%;
+    @media (min-width: 1200px){
+        overflow: hidden;
+        width: 390px;
+        position: relative;
+        height: auto;
+        right: auto;
+        z-index: inherit;       
+    }
+    
+    padding: 50px;
+    .lb-cart-heading {
+        padding-bottom: 20px;
+        border-bottom: 1px solid #fff;
+    }
+    &.lb-move-cart-left{
+        right: 0;
+        overflow-y: scroll;
+    }
+}
+.lb-payment-section-left {
+    // background: red;
+    width: 90%;
+    @media (min-width: 1200px){
+        width: calc(100% - 390px);
+    }
+    .lb-customer-info {
+        @media (min-width: 1200px){
+            max-width: 720px;
+        }        
+        margin: 0 auto;
+        // background: blanchedalmond;
+    }
+}
+.btn-cart-close {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    @media (min-width: 1200px){
+        display: none;
+    }  
+}
+.ib-paymet-steps {
+    ul{
+        padding: 0px;
+        margin: 0px;
+        border-bottom: 1px solid #e4eaee;
+        li{
+            display: inline-block;
+            list-style: none;
+            padding: 0 40px 20px 40px;
+            color: $placeholder-color;            
+            &.active{
+                color: $curvy-text;
+                font-weight: bold;
+                border-bottom: 1px solid #1b2125;
+            }
+        }
+    }
+}
+.lb-return-to-cart-link{
+    color: $placeholder-color;
+}
+.lb-payment-cart-product-details {    
+    padding: 46px 0px 25px;
+    border-bottom: 1px solid #fff;
+}
+.lb-payment-cart-product-display-area{
+    max-height: 225px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.lb-payment-cart-image{
+    width: 88px;
+    height: 88px;
+    background: $white-text;
+    @include border-radius(3px);
+    padding: 7px;
+    text-align: center;
+    img{
+        max-width: 100%;
+        max-height: 100%;
+        margin: 0 auto;
+        object-fit: contain;
+    }
+}
+.lb-payment-cart-product-info {
+    width: 180px;
+}
+.lb-payment-price-section {
+    border-bottom: 1px solid #fff;
+}
+.lb-payment-body {
+    h4 {
+        span{
+            &.optional-text{
+                font-size: 18px;
+                color: $placeholder-color;
+                font-family: 'Noto Sans', sans-serif; 
+            }
+        }
+    }
+}
+textarea.form-control.lb-text-area-paymentnote{
+    height: 200px;
+}
+.lb-payment-method{
+    padding: 40px;
+    @include border-radius(3px);
+    border: 1px solid $charcoal-grey;
+}
+.input-top-icon {
+    position: absolute;
+    top: 40px;
+    right: 30px;
+}
+.lb-order-confirmtion{
+    margin-top: 194px;
+    @media (min-width: 768px){
+        margin-top: 127px;
+    }    
+    @media (min-width: 992px){
+        margin-top: 90px;
+    }
+}

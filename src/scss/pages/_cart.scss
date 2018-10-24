@@ -1,0 +1,41 @@
+.lb-shopping-cart {
+    .container{
+        max-width: 1260px;
+    }
+    .lb-custom-select {
+        width: 100px;
+        select {
+            background-position: 89.5% center;
+        }
+    }
+}
+.lb-cart-item{
+    min-width: 29px;
+    min-height: 29px;
+    @include border-radius(29px);
+    background: $theme-green-button;
+    color: $white-text;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 29px;
+}
+.lb-cart-cta {
+    @media (min-width: 992px) {
+        width: 375px;
+    }
+}
+.lb-cart-body{
+    max-width: 1032px;
+    margin: 0 auto;
+}
+.lb-cart-footer {
+    max-width: 1032px;
+    margin: 0 auto;
+}
+.lb-cart-header {
+    border-bottom: 1px solid $bluegrey;
+    @media (min-width: 768px) {
+        border: none;
+    }
+}

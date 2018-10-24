@@ -15,7 +15,12 @@ $(".btn-fd").click(function () {
   $(".sub-header").toggleClass("move-right");
 })
 
-
+$(".btn-cart-fd").click(function () {  
+  $(".lb-payment-section-right").addClass("lb-move-cart-left");
+});
+$(".btn-cart-close").click(function () {  
+  $(".lb-payment-section-right").removeClass("lb-move-cart-left");
+});
 var profileName = $(".profile-name-box h2").text();
 $(".profile-name-box input").val(profileName);
 var newProfileName;

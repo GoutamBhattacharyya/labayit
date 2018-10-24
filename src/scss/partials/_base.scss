@@ -21,6 +21,8 @@
 
 @import url('https://fonts.googleapis.com/css?family=Andada');
 
+@import url('//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
+
 body{
     font-family: 'Noto Sans', sans-serif;
     font-size: 18px;
@@ -38,6 +40,9 @@ a{
         color: $purple-brown;
         text-decoration: none;
     }
+}
+.form-control {
+    color: $charcoal-grey;
 }
 hr{
     border-top: 1px solid $hr-border;
@@ -109,7 +114,12 @@ h5.bold{
     font-weight: normal !important;
     color: $charcoal-grey;
 }
-
+.bold-button-gray-text {
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    color: $placeholder-color;
+}
 .bold-button-white-text {
     font-family: 'Noto Sans', sans-serif;
     font-weight: bold;
@@ -178,12 +188,26 @@ a{
     top: 50%;
     transform: translate(-50%, -50%);
 }
-
+.lb-mandetory-star{
+    color: $from-star-color;
+    position: relative;
+    top: -2px;
+}
 /* Grid */
 
 .w-md-25 {
     @media (min-width: 768px){
         width: 25%;
+    }
+}
+.w-md-75 {
+    @media (min-width: 768px){
+        width: 75%;
+    }
+}
+.w-md-50 {
+    @media (min-width: 768px){
+        width: 50%;
     }
 }
 .justify-content-product-xl-start {
@@ -196,4 +220,7 @@ a{
 }
 .h-71{
     height: calc(100% - 150px);
+}
+.zoom-one-third {
+    zoom: .75;
 }
