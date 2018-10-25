@@ -63,6 +63,12 @@ h2.white{
 h2.black {
     color: $charcoal-grey;
 }
+h2.curvy{
+    font-family: 'xiomararegular';
+    font-size: 63px;
+    line-height: 70px;
+    color: $curvy-text;
+}
 h3{
     font-family: 'Noto Sans', sans-serif;
     font-size: 48px;
@@ -70,6 +76,12 @@ h3{
 }
 h3.style-ext{
     font-family: 'andadabold';
+}
+h3.curvy{
+    font-family: 'xiomararegular';
+    font-size: 48px;
+    line-height: 54px;
+    color: $curvy-text;
 }
 h4{
     font-family: 'andadabold';
@@ -160,6 +172,11 @@ h5.bold{
     font-size: 28px;
     color: $charcoal-grey;
     font-weight: bold;
+}
+.promise-heading{
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 36px;
+    color: $white-text;    
 }
 /*Font*/
 

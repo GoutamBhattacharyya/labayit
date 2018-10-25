@@ -11,7 +11,7 @@
     }
 }
 .lb-faq-search{   
-    background: $theme-green-button;
+    background: $pale-teal;
     min-height: 343px;
     .lb-search-glass{
         border: none;
@@ -76,4 +76,78 @@
     height: 21px;
     top: 15px;
     background-size: contain;
+}
+.lb-about-title {
+    padding: 90px 0 40px 0;
+    &:before{        
+        @media (min-width: 768px){
+            position: absolute;
+            content: "";
+            width: 194px;
+            height: 165px;
+            left: 78px;
+            top: 120px;
+            background: url(../images/about-page-love-gr.jpg) top left no-repeat;
+        }
+    }
+    &:after{
+        @media (min-width: 768px){
+            position: absolute;
+            content: "";
+            width: 118px;
+            height: 119px;
+            top: 140px;
+            right: 78px;
+            background: url(../images/about-page-love-single-gr.jpg) top left no-repeat;
+            }
+    }
+}
+.lb-our-promise{
+    background: $pale-teal;
+}
+
+.lb-static-main-banner {
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 60vh;
+    width: auto;
+    @media (min-width: 768px) {
+        height: 365px;
+    }
+    @media (min-width: 992px) {
+        height: 365px;
+    }
+    
+}
+.lb-static-main-banner-content{
+    position: relative;
+    z-index: 2;
+}
+.lb-static-page-form{
+    .lb-static-page-form-side{        
+        width: 100%;
+        @media (min-width: 768px) {
+            width: 45%;
+        }
+    }
+    .lb-static-page-form-full {
+        width: 100%;
+    }
+}
+.lb-contact-us-header{
+    background: $pale-teal;
+}
+.lb-contact-method-box{
+    background: #fff;
+    width: 365px;
+}
+.lb-method-icon {
+    min-height: 130px;
+}
+.lb-contact-heading{
+    @media (max-width: 991px) {
+        font-size: 40px !important;
+    }
 }
