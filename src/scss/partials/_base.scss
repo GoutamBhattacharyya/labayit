@@ -91,6 +91,9 @@ h5{
     color: $charcoal-grey;
     font-weight: bold;
 }
+h5.brown{
+    color: $dark-mauve;    
+}
 h5.bold{
     font-family: 'andadabold';
     font-size: 24px;
@@ -113,6 +116,12 @@ h5.bold{
     font-size: 18px !important;
     font-weight: normal !important;
     color: $charcoal-grey;
+}
+.white-text-normal {
+    font-family: 'Noto Sans', sans-serif;    
+    font-size: 18px !important;
+    font-weight: normal !important;
+    color: #fff;
 }
 .bold-button-gray-text {
     font-family: 'Noto Sans', sans-serif;
@@ -145,6 +154,12 @@ h5.bold{
     text-transform: uppercase;
     font-size: 16px;
     color: $dark-mauve;
+}
+.faq-subheading {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 28px;
+    color: $charcoal-grey;
+    font-weight: bold;
 }
 /*Font*/
 
@@ -223,4 +238,16 @@ a{
 }
 .zoom-one-third {
     zoom: .75;
+}
+.breadcrumb {
+    background: transparent;
+    font-size: 14px;
+    color: #000000;
+    a{
+        font-size: 14px;
+        color: #000000;
+    }
+}
+.breadcrumb-item + .breadcrumb-item::before {
+    content: ">";
 }

@@ -81,6 +81,9 @@ h5 {
   color: #404352;
   font-weight: bold; }
 
+h5.brown {
+  color: #934d6b; }
+
 h5.bold {
   font-family: 'andadabold';
   font-size: 24px;
@@ -103,6 +106,12 @@ h5.bold {
   font-size: 18px !important;
   font-weight: normal !important;
   color: #404352; }
+
+.white-text-normal {
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 18px !important;
+  font-weight: normal !important;
+  color: #fff; }
 
 .bold-button-gray-text {
   font-family: 'Noto Sans', sans-serif;
@@ -135,6 +144,12 @@ h5.bold {
   text-transform: uppercase;
   font-size: 16px;
   color: #934d6b; }
+
+.faq-subheading {
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 28px;
+  color: #404352;
+  font-weight: bold; }
 
 /*Font*/
 /* Mixin */
@@ -183,6 +198,17 @@ a {
 
 .zoom-one-third {
   zoom: .75; }
+
+.breadcrumb {
+  background: transparent;
+  font-size: 14px;
+  color: #000000; }
+  .breadcrumb a {
+    font-size: 14px;
+    color: #000000; }
+
+.breadcrumb-item + .breadcrumb-item::before {
+  content: ">"; }
 
 .static-nav-header {
   padding: 20px 0 16px 0;
@@ -2211,6 +2237,12 @@ footer {
 .lb-cart-table .border-bottom {
   border-bottom: 1px solid #889ea5 !important; }
 
+.lb-faq-view a {
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 24px;
+  color: #934d6b;
+  text-transform: uppercase; }
+
 .lb-home-banner {
   position: relative;
   height: 600px;
@@ -3051,3 +3083,71 @@ textarea.form-control.lb-text-area-paymentnote {
   @media (min-width: 992px) {
     .lb-order-confirmtion {
       margin-top: 90px; } }
+
+.lb-static-page-body {
+  margin-top: 194px; }
+  @media (min-width: 768px) {
+    .lb-static-page-body {
+      margin-top: 127px; } }
+  @media (min-width: 992px) {
+    .lb-static-page-body {
+      margin-top: 90px; } }
+  .lb-static-page-body .container {
+    max-width: 1260px; }
+
+.lb-faq-search {
+  background: #64c1bd;
+  min-height: 343px; }
+  .lb-faq-search .lb-search-glass {
+    border: none;
+    background-color: #fff;
+    background: url(../images/faq-search-gr.jpg) center center no-repeat; }
+  .lb-faq-search .input-group-append {
+    margin-left: -4px; }
+
+.lb-faq-search-box {
+  max-width: 740px; }
+
+.lb-faq-box {
+  max-width: 364px;
+  box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.5);
+  border: solid 1px #979797;
+  background: #fff;
+  padding: 10px 20px; }
+  .lb-faq-box .lb-faq-box-top-image {
+    height: 170px; }
+    .lb-faq-box .lb-faq-box-top-image img {
+      max-height: 100%; }
+
+.lb-faq-satic-title {
+  position: relative;
+  display: inline-block; }
+  .lb-faq-satic-title img {
+    position: absolute;
+    bottom: 0;
+    left: 0; }
+
+.lb-accoordian-container h5 {
+  cursor: pointer;
+  word-wrap: break-word;
+  width: 90%;
+  line-height: 35px; }
+
+.faq-arrow {
+  width: 14px;
+  height: 21px;
+  margin-left: 5px;
+  display: inline-block;
+  position: absolute;
+  top: 10px;
+  right: 25px; }
+
+.faq-close {
+  background: url(../images/faq-close.png) top left no-repeat; }
+
+.faq-open {
+  background: url(../images/faq-open.png) top left no-repeat;
+  width: 22px;
+  height: 21px;
+  top: 15px;
+  background-size: contain; }

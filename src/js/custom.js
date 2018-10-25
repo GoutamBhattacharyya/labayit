@@ -224,3 +224,15 @@ $(".lb-email-search-cross-btn").on("click",function(e){
   $(".lb-account-menu").show();
   $(".lb-price-dp").show();
 });
+
+$(document).ready(function () {
+  (function ($) {
+      var allPanels = $('.lb-accoordian-container > div').hide();
+      $('.lb-accoordian-container > h5').click(function () {
+          //allPanels.slideUp();
+          $(this).next().slideToggle();          
+          $(this).find(".faq-arrow").toggleClass("faq-open");
+          return false;
+      });
+  })(jQuery);
+})
