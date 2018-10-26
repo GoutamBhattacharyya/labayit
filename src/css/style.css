@@ -3495,3 +3495,37 @@ textarea.form-control.lb-text-area-paymentnote {
 
 .lb-post-nav a {
   color: #934d6b; }
+
+.collection-body {
+  margin-top: 194px; }
+  @media (min-width: 768px) {
+    .collection-body {
+      margin-top: 127px; } }
+  @media (min-width: 992px) {
+    .collection-body {
+      margin-top: 176px; } }
+
+.lb-collection-box {
+  position: relative;
+  overflow: hidden; }
+  .lb-collection-box .full-link {
+    width: 101%;
+    height: 101%;
+    z-index: 2;
+    background: rgba(64, 67, 82, 0.5); }
+    .lb-collection-box .full-link:hover {
+      background: rgba(147, 77, 107, 0.5); }
+  .lb-collection-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
+
+.lb-collection-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 2;
+  transform: translate(-50%, -50%); }
+  .lb-collection-content h5 {
+    text-align: center;
+    color: #fff; }

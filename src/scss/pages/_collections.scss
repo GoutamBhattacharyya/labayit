@@ -1,0 +1,38 @@
+.collection-body{
+    margin-top: 194px;
+    @media (min-width: 768px){
+        margin-top: 127px;
+    }    
+    @media (min-width: 992px){
+        margin-top: 176px;
+    }
+}
+.lb-collection-box {
+    .full-link{
+        width: 101%;
+        height: 101%;
+        z-index: 2;
+        background: rgba(64, 67, 82, 0.50);
+        &:hover{
+            background: rgba(147, 77, 107, 0.50);
+        }
+    }
+    position: relative;
+    overflow: hidden;   
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+.lb-collection-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+    transform: translate(-50%, -50%);
+    h5{
+        text-align: center;
+        color: #fff;
+    }
+}
