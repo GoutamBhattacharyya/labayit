@@ -598,6 +598,25 @@ box-shadow: 0px 0px 6px 2px rgba(0,0,0,0.2);
         background: $purple-brown;
     }
 }
+.btn-blog-read-more {
+    @include border-radius(26px);
+    background: $theme-green-button;
+    border: none;
+    outline: none;
+    height: 48px;
+    width: 161px;
+    text-align: center;
+    color: $white-text;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+    line-height: 48px;
+    display: block;
+    &:hover {
+        color: $white-text;
+        background: $theme-green-button-hover;
+    }
+}
 .lb-find-couple {
     background: $charcoal-grey;
     padding: 80px 15px;
@@ -1179,6 +1198,15 @@ footer {
     left: -56px;
     top: 200px;
     border: 1px solid $purple-brown;
+    border-right: none;
+}
+.btn-blog-fd {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: -50px;
+    top: 150px;
+    border: 1px solid #62646f;
     border-right: none;
 }
 .sub-header {
@@ -2195,3 +2223,133 @@ box-shadow: 0px 20px 30px -15px rgba(0,0,0,0.35);
         text-transform: uppercase;
     }
 }
+
+.add-pading {
+    padding-top: 89px;
+}
+.blog-sub-header {
+    &.blog-header-fixed {
+        position: fixed;
+        top: 89px;
+        width: 100%;
+    }
+    padding: 30px 0px;
+    background: $store-header;
+    transition: right 0.5s ease; 
+    z-index: 90;   
+    position: relative;   
+    @media (max-width: 991px) {
+        width: 200px;
+        height: 100%;
+        margin-top: 0px;
+        right: -200px;
+        left: auto;
+        z-index: 110; 
+        border-left: 1px solid #62646f;
+        position: fixed;
+        top: 0;
+    }
+    &.move-right{
+        right: 0px;
+    }
+    .container {
+        max-width: 1360px;
+    }
+    .blog-sub-header-menu {
+        padding: 0px;
+        margin: 0px;
+        li {
+            display: inline-block;
+            padding: 0px 9px;
+            position: relative;
+            @media (max-width: 991px) {
+                display: block;
+                text-align: left;
+                padding-left: 0px;
+                padding-right: 0px;
+            }
+            @media (min-width: 1140px) {
+                padding: 0px 12px;
+            }
+            @media (min-width: 1300px) {
+                padding: 0px 23px;
+            }
+            &:first-child {
+                padding-left: 0px;
+            }
+            &:last-child{
+                padding-right: 0px;
+            }
+            a{
+                color: $charcoal-grey;
+                font-size: 14px;
+                &:hover{
+                    text-decoration: none;
+                    color: #fff;
+                    @media (max-width: 991px) {
+                        color: $white-text;
+                        background: $theme-green-button;
+                    }
+                }
+                @media (max-width: 991px) {
+                    padding: 5px 15px;
+                    display: block;
+                    width: 100%;
+                }
+                @media (min-width: 1140px) {
+                    font-size: 16px;
+                }
+                @media (min-width: 1300px) {
+                    font-size: 16px;
+                }
+                @media (min-width: 1360px) {
+                    font-size: 18px;
+                }
+            }
+            &.active{
+                a{
+                    text-decoration: none;
+                    color: $theme-green-button;
+                    @media (max-width: 991px) {
+                        color: $white-text;
+                        background: $theme-green-button;
+                    }
+                }
+            }
+            &:nth-child(1){
+                &:after{
+                    content: "";
+                    position: absolute;
+                    border-bottom: 1px solid $charcoal-grey;
+                    width: 100%;
+                    height: 1px;
+                    left: 0px;
+                    right: auto;
+                    bottom: -1px;
+                    @media (min-width: 992px){
+                        border-right: 1px solid $charcoal-grey;
+                        width: 1px;
+                        height: 45px;
+                        right: 0px;
+                        left: auto;
+                        top: -8px;   
+                    }
+                }
+            }
+        }
+    }
+    .btn-fd{
+        background: url(../images/btn-fd-green-sq.png);
+    }
+    .btn-bk {
+        background: url(../images/btn-bk-green-sq.png);
+    }
+    .btn-blog-fd {
+        background: url(../images/btn-fd-green-sq.png);
+    }
+    .btn-blog-bk {
+        background: url(../images/btn-bk-green-sq.png);
+    }
+}
+
+
