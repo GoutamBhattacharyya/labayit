@@ -237,6 +237,11 @@ a{
     position: relative;
     top: -2px;
 }
+.lb-error-text{
+    color: $from-star-color;
+    position: relative;
+    top: -2px;
+}
 /* Grid */
 
 .w-md-25 {
@@ -279,4 +284,8 @@ a{
 }
 .breadcrumb-item + .breadcrumb-item::before {
     content: ">";
+}
+.lb-error-msg {
+    position: relative;
+    top: 0px;
 }
