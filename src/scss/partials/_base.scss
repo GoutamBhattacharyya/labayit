@@ -112,6 +112,9 @@ h5.bold{
     color: $charcoal-grey;
     font-weight: bold;
 }
+.curvy-text{
+    color: $curvy-text;
+}
 .contribute-gray-text {
     font-family: 'Noto Sans', sans-serif;
     font-size: 24px;
@@ -288,4 +291,16 @@ a{
 .lb-error-msg {
     position: relative;
     top: 0px;
+}
+.lb-width-155{
+    text-align: center;
+    @media (min-width: 992px){
+        width: 80px;
+    }
+    @media (min-width: 1200px){
+        width: 130px;
+    }
+}
+.w-65 {
+    width: 65% !important;
 }
