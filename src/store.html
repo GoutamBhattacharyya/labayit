@@ -368,7 +368,7 @@
                     <div class="d-flex justify-content-between justify-content-product-xl-start flex-wrap">
                         <div class="lb-registry-product-card">
                             <div class="lb-product-image d-flex justify-content-center align-items-center">
-                                <a href="#"><img src="images/product-1.png" alt=""></a>
+                                <a href="#" data-toggle="modal" data-target="#themeModal-store-product-details"><img src="images/product-1.png" alt=""></a>
                             </div>
                             <div class="lb-product-desc text-center d-flex flex-column h-71">
                                 <div class="product-name-info">
@@ -862,7 +862,7 @@
         </div>
     </div>   
     <!-- Modal -->
-     <!-- Modal -->
+    <!-- Modal -->
     <div class="modal fade bd-example-modal-lg" id="themeModal-store-login" tabindex="-1" role="dialog" aria-labelledby="themeModal-store-loginLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
@@ -912,6 +912,94 @@
     </div>
     </div>
     <!-- Modal -->
+    <!-- Modal Product Details -->
+    <div class="modal fade bd-example-modal-lg" id="themeModal-store-product-details" tabindex="-1" role="dialog" aria-labelledby="themeModal-store-product-details" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+            <div class="modal-body">
+                <a href="#" data-dismiss="modal" class="position-absolute lb-cross-btn">
+                    <img src="images/gray-cross.png" alt="">
+                </a>
+                <div class="d-flex flex-column flex-lg-row no-gutters align-items-stretch">
+                    <div class="d-flex col-lg-4 p-lg-4 p-5 lb-product-details-image">
+                        <div class="d-flex align-self-center">
+                            <img src="images/product-1-big.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-4 p-4 border-right">
+                        <div class="lb-details-page-product-name-info">
+                            <span class="registry-text-Black d-block">Painted Serving Plate</span>
+                            <span class="product-card-input-text d-block">EMANUEL</span>
+                        </div>
+                        <div class="lb-product-details-cart-info mt-5 pb-5">
+                            <div class="lb-product-details-card-price mt-4 mb-3">$20.00</div>
+                            <div class="d-flex align-items-center lb-product-details-quantiy">
+                                <div class="bold-button-black-text pr-3">Quantity:</div>
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <a href="#" class="mr-2">
+                                        <img src="images/minus.png" alt="">
+                                    </a>
+                                    <div class="lb-product-request">
+                                        <input type="text" class="lb-product-request-input" value="1">
+                                    </div>
+                                    <a href="#" class="ml-2">
+                                        <img src="images/plus.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="mt-4">                                    
+                                <button type="button" class="btn btn-add-to-registry mt-3 mt-md-0 mb-1" data-toggle="modal" data-target="#themeModal-gift">ADD TO REGISTRY</button>
+                            </div>
+                        </div>
+                        <div class="lb-product-details-similar-products mt-5">
+                            <span class="normal-button-black-text pb-3 d-block">Similar Items</span>
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <img src="images/product-5.png" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="images/product-2.png" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="images/product-3.png" alt="">
+                                    </a>
+                                </li>
+                        </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 p-4">
+                        <div class="product-description-content">
+                            <span class="bold-button-black-text">Description:</span>
+                            <p>
+                                Are you one of those pomegranate fans? We get it! This bowl is a pom-lover’s ideal serving item. 
+                                Wow your guests with this beautiful handpainted work of Emanuel art.
+                            </p>
+                            <span class="bold-button-black-text">Details:</span>
+                            <div class="pb-3">
+                                <span>Dimensions: 30 inches</span>
+                                <span>Materials: Wood, acrylic paint Care Instructions: Handwash </span>
+                                <span>Returns: 20 days after delivery </span>
+                            </div>
+                            <span class="bold-button-black-text">The Brand:</span>
+                            <p>
+                                Artist Yair Emanuel, one of Israel's most famous and respected commercial artists, 
+                                lives and works in Jerusalem. Vivid and harmonious colors as well as a mixture of 
+                                the old and the new characterize Emanuel's work, creating some of the most instantly 
+                                recognizable Judaica pieces. 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Product Details End -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="js/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
